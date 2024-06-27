@@ -1,0 +1,192 @@
+Rank,School,Applications,Interviews,Percent_interviewed,Admits,Percent_admitted_post_II,MCAT,GPA
+#1,Harvard Medical School,"8,002",851,11%,222,26%,521,3.96
+#2,Johns Hopkins,"4,548",576,13%,288,50%,521,3.96
+#3,UPenn (Perelman),"7,327",809,11%,281,35%,522,3.96
+#4,Columbia University,"8,080",852,11%,293,34%,522,3.95
+#5,Duke University,"9,071",672,7%,261,39%,520,3.92
+#6,Stanford University,"11,325",500,4%,157,31%,519,3.92
+#7,UCSF,"9,090",545,6%,255,47%,517,3.89
+#8,Vanderbilt University,"7,269",727,10%,330,45%,521,3.95
+#9,WashU St. Louis,"4,584","1,183",26%,344,29%,521,3.95
+#10,Weill Cornell Medicine,"7,926",782,10%,267,34%,519,3.93
+#11,NYU Grossman,"8,936","1,060",12%,219,21%,523,3.98
+#12,Yale School of Medicine,"5,176",640,12%,297,46%,522,3.95
+#13,Mayo Clinic,"5,067",795,16%,227,29%,521,3.95
+#14,Northwestern University,"8,072",806,10%,398,49%,521,3.93
+#15,University of Michigan,"9,401",408,4%,337,83%,518,3.90
+#16,University of Pittsburgh,"7,099",931,13%,295,32%,516,3.87
+#17,University of Washington,"7,631",790,10%,344,44%,512,3.81
+#18,Icahn at Mount Sinai,"8,276",823,10%,282,34%,519,3.92
+#19,UCLA,"13,072",894,7%,375,42%,514,3.85
+#20,UChicago (Pritzker),"7,362",640,9%,237,37%,521,3.94
+#21,UCSD,"8,213",845,10%,278,33%,516,3.86
+#22,Baylor,"5,783",903,16%,295,33%,519,3.94
+#23,Emory University,"9,117",668,7%,304,46%,517,3.84
+#24,UTSW,"4,137",844,20%,401,48%,517,3.93
+#25,Case Western Reserve,"8,090","1,131",14%,529,47%,519,3.90
+#26,Colorado,"5,593",723,13%,304,42%,516,3.89
+#27,UNC,"6,289",691,11%,262,38%,516,3.82
+#28,Ohio State University,"7,013",641,9%,420,66%,516,3.90
+#29,USC (Keck),"8,920",665,7%,356,54%,517,3.86
+#30,Oregon University,"6,506",520,8%,250,48%,511,3.74
+#31,University of Virginia,"4,687",568,12%,470,83%,520,3.94
+#32,Boston University,"11,405",876,8%,465,53%,518,3.88
+#33,University of Maryland,"5,792",534,9%,288,54%,514,3.86
+#34,University of Rochester,"5,669",719,13%,318,44%,518,3.91
+#35,Brown University,"11,049",395,4%,307,78%,517,3.87
+#36,University of Alabama,"4,700",494,11%,271,55%,511,3.90
+#37,University of Cincinnati,"5,862",668,11%,386,58%,517,3.91
+#38,University of Florida,"5,578",369,7%,230,62%,516,3.92
+#39,University of Minnesota,"4,813",674,14%,357,53%,511,3.84
+#40,University of Utah,"3,919",500,13%,168,34%,511,3.82
+#41,University of Wisconsin,"5,623",511,9%,286,56%,512,3.80
+#42,Albert Einstein,"9,785","1,071",11%,367,34%,516,3.88
+#43,Indiana University,"6,805","1,075",16%,588,55%,512,3.90
+#44,UC Irvine,"6,695",491,7%,227,46%,516,3.89
+#45,University of Iowa,"3,786",726,19%,292,40%,515,3.89
+#46,UMass,"5,394","1,074",20%,400,37%,516,3.89
+#47,University of Miami,"11,017",535,5%,339,63%,515,3.85
+#48,Dartmouth (Geisel),"9,488",646,7%,272,42%,516,3.82
+#49,Wake Forest,"11,066",492,4%,269,55%,512,3.85
+#50,UC Davis,"7,849",558,7%,247,44%,512,3.69
+#51,USF (Morsani),"5,686",856,15%,453,53%,519,3.93
+#53,Georgetown University,"17,882","1,198",7%,429,36%,515,3.89
+#54,Tufts University,"12,237",792,6%,546,69%,515,3.85
+#55,University of Connecticut,"4,030",342,8%,218,64%,513,3.85
+#56,Medical University of South Carolina,"1,334",395,30%,210,53%,512,3.92
+#57,McGovern (Houston),"5,616","1,031",18%,413,40%,513,3.92
+#58,George Washington,"12,107",912,8%,297,33%,512,3.81
+#59,Stony Brook University,"5,712",797,14%,461,58%,517,3.89
+#60,Jefferson (Kimmel),"11,090",587,5%,438,75%,514,3.86
+#61,University of Illinois,"7,557",705,9%,586,83%,512,3.77
+#62,University of Nebraska,"1,912",407,21%,192,47%,512,3.94
+#63,University of Arizona,"7,371",525,7%,194,37%,511,3.84
+#64,Texas A&M,"5,658",645,11%,308,48%,513,3.89
+#65,University of Kentucky,"3,909",613,16%,281,46%,506,3.87
+#66,University of Vermont,"7,174",618,9%,345,56%,513,3.75
+#67,Virginia Commonwealth,"7,437",691,9%,362,52%,513,3.88
+#68,Hofstra,"4,493",813,18%,374,46%,518,3.90
+#69,Rush University,"8,464",413,5%,261,63%,511,3.70
+#70,Rutgers (Robert Johnson),"5,528",494,9%,287,58%,515,3.83
+#71,Rutgers New Jersey,"5,919",749,13%,340,45%,516,3.85
+#72,Temple University,"8,408","1,051",13%,448,43%,512,3.79
+#73,University of Tennessee,"2,777",391,14%,263,67%,512,3.91
+#74,Wayne State University,"8,018","1,510",19%,701,46%,513,3.86
+#75,University of Kansas,"2,587",546,21%,274,50%,510,3.87
+#76,Buffalo (Jacobs),"5,170",552,11%,353,64%,511,3.79
+#77,University of Arkansas,"1,350",411,30%,214,52%,507,3.85
+#78,University of Oklahoma,"1,927",293,15%,202,69%,510,3.94
+#79,Augusta University (MCG),"3,564",593,17%,382,64%,513,3.84
+#80,Hackensack Meridian,"5,799",437,8%,385,88%,515,3.82
+#81,University of Hawaii,"2,792",290,10%,104,36%,513,3.88
+#82,University of Louisville,"4,980",416,8%,288,69%,508,3.82
+#83,University of New Mexico,"1,481",237,16%,130,55%,506,3.82
+#84,Virginia Tech,"6,916",287,4%,141,49%,513,3.70
+#85,Saint Louis University,"7,246",849,12%,471,55%,513,3.93
+#86,Missouri-Columbia,"3,201",388,12%,202,52%,509,3.85
+#87,West Virginia University,"4,743",608,13%,179,29%,510,3.83
+#88,Drexel University,"13,223","1,603",12%,811,51%,512,3.80
+#89,Michigan State University,"9,172",529,6%,325,61%,509,3.80
+#90,SUNY Upstate,"5,326",757,14%,397,52%,513,3.81
+#91,Missouri-Kansas,"2,184",482,22%,222,46%,510,3.89
+#92,NYU Long Island,"2,498",531,21%,30,6%,515,3.84
+#93,Geisinger Commonwealth,"4,387",823,19%,346,42%,512,3.86
+#94,University of Nevada (Reno),"1,557",359,23%,91,25%,509,3.76
+#95,University of South Carolina,"3,258",350,11%,218,62%,510,3.91
+#96,Texas Tech University,"5,253",909,17%,266,29%,512,3.93
+#97,UC Riverside,"6,276",295,5%,144,49%,510,3.75
+#98,Florida State University,"3,973",253,6%,160,63%,509,3.86
+#99,University of Central Florida,"5,521",509,9%,305,60%,515,3.91
+#100,Eastern Virginia,"7,630",801,10%,299,37%,513,3.80
+#101,New York Medical College,"12,336",960,8%,678,71%,516,3.80
+#102,University of Toledo,"4,274",389,9%,319,82%,510,3.82
+#103,East Carolina University,"1,165",393,34%,150,38%,507,3.73
+#104,East Tennessee State,"3,812",358,9%,149,42%,509,3.85
+#105,Howard University,"8,963",394,4%,341,87%,506,3.67
+#106,Florida Atlantic University,"5,110",317,6%,192,61%,516,3.90
+#107,Florida International University,"6,750",414,6%,278,67%,511,3.90
+#108,Marshall University,"1,916",182,9%,118,65%,506,3.83
+#109,Northeast Ohio,"5,108",546,11%,343,63%,510,3.80
+#110,Cooper (Rowan),"5,032",377,7%,231,61%,514,3.88
+#112,Wright State University,"7,556",411,5%,298,73%,509,3.82
+#113,Medical College of Wisconsin,"10,046",814,8%,N/A,-,510,3.80
+#114,Tulane University,"15,925",572,4%,N/A,-,512,3.77
+#115,Uniformed Services,"2,698",614,23%,N/A,-,512,3.84
+#116,Loyola University (Stritch),"13,384",532,4%,N/A,-,512,3.77
+#117,Penn State University,"11,366",749,7%,N/A,-,511,3.84
+#118,Creighton University,"6,383",842,13%,N/A,-,515,3.89
+#119,Oklahoma State University,"4,119",358,9%,241,67%,510,3.94
+#120,UT Austin (Dell),"5,576",386,7%,N/A,-,515,3.92
+#121,Kaiser Permanente (Tyson),"11,587",716,6%,126,18%,517,3.85
+#122,Michigan State COM,"8,130",931,11%,566,61%,507,3.72
+#123,LSU (New Orleans),"4,211",521,12%,N/A,-,510,3.86
+#124,UT Medical Branch,"5,511","1,080",20%,N/A,-,513,3.87
+#125,Arkansas COM,N/A,N/A,-,N/A,-,500,3.50
+#126,University of Arizona (Phoenix),"6,344",445,7%,N/A,-,518,3.87
+#127,University of North Dakota,"1,894",188,10%,N/A,-,509,3.86
+#128,University of Mississippi,421,221,52%,N/A,-,506,3.87
+#129,Rosalind Franklin,"11,382",828,7%,N/A,-,513,3.80
+#130,Southern Illinois University,"1,209",261,22%,N/A,-,507,3.86
+#131,Albany Medical College,"12,496",720,6%,N/A,-,510,3.80
+#132,Loma Linda University,"6,238",322,5%,N/A,-,511,3.92
+#133,West Virginia COM,"5,215",598,11%,574,96%,501,3.59
+#134,South Carolina (Greenville),"2,652",353,13%,214,61%,510,3.90
+#135,SUNY Downstate,"6,147",925,15%,N/A,-,513,3.79
+#136,Morehouse,"7,095",465,7%,N/A,-,507,3.72
+#137,University of Houston,"5,343",247,5%,N/A,-,505,3.75
+#138,University of North Texas,"4,379",701,16%,402,57%,509,3.86
+#139,Unviersity of South Dakota,868,213,25%,N/A,-,509,3.85
+#140,LSU (Shreveport),"4,434",325,7%,N/A,-,507,3.85
+#141,Ohio University (Heritage),"5,155",481,9%,384,80%,505,3.68
+#142,Mercer University,"1,410",430,30%,N/A,-,505,3.77
+#143,University of Nevada (Vegas),"1,502",300,20%,N/A,-,510,3.77
+#144,University of New England,"4,048",589,15%,330,56%,505,3.61
+#145,University of South Alabama,"1,800",197,11%,N/A,-,508,3.89
+#146,CUNY School of Medicine,980,341,35%,175,51%,N/A,N/A
+#147,Texas Tech (El Paso),"4,800",612,13%,N/A,-,514,3.93
+#148,Meharry Medical College,"8,084",302,4%,N/A,-,504,3.58
+#149,Kansas City Biosciences,N/A,N/A,-,N/A,-,505,3.62
+#150,Des Moines University,N/A,N/A,-,N/A,-,507,3.66
+#151,PCOM,N/A,N/A,-,548,-,505,3.41
+#152,Quinnipiac University,"7,430",362,5%,317,88%,513,3.78
+#153,University of Puerto Rico,729,180,25%,N/A,-,504,3.90
+#154,Oakland University,"7,726",500,6%,N/A,-,511,3.91
+#155,CCOM,N/A,N/A,-,N/A,-,507,3.53
+#156,NYIT-COM,N/A,N/A,-,N/A,-,505,3.60
+#157,Washington State (Floyd),"1,443",304,21%,N/A,-,509,3.77
+#158,Western Michigan,"4,301",460,11%,N/A,-,513,3.83
+#159,Central Michigan,"7,987",528,7%,N/A,-,507,3.78
+#160,UT Rio Grande Valley,"4,729",510,11%,N/A,-,507,3.79
+#161,VCOM,"9,334","1,574",17%,"1,387",88%,502,3.70
+#162,LECOM,"21,364","4,223",20%,"1,299",31%,505,3.74
+#163,Western University,"9,488","1,143",12%,830,73%,507,3.67
+#164,Rowan COM,"6,145",536,9%,506,94%,507,3.65
+#165,Rocky Vista University,N/A,N/A,-,N/A,-,504,3.54
+#166,Texas Christian University,"6,329",249,4%,120,48%,511,3.82
+#167,Touro University California,"5,448",526,10%,379,72%,507,3.51
+#168,Pacific Northwest,"2,442",643,-,421,65%,504,3.60
+#169,ATSU (Mesa),N/A,N/A,-,N/A,-,504,3.46
+#170,Ponce Health Sciences,"1,612",295,18%,N/A,-,499,3.70
+#171,Lincoln Memorial University,"5,347","1,016",19%,940,93%,500,3.50
+#172,Marian University,"5,702",552,10%,316,57%,504,3.65
+#173,Touro COM,N/A,N/A,-,N/A,-,509,3.56
+#174,CHSU COM,"3,300",N/A,-,N/A,-,506,3.40
+#175,Nova Southeastern (Patel),"5,599","1,091",19%,817,75%,513,3.89
+#176,LUCOM,N/A,N/A,-,N/A,-,504,3.40
+#177,Carle Illinois,"2,923",N/A,-,N/A,-,515,3.83
+#178,University of Pikeville,"3,429",466,14%,465,100%,502,3.63
+#179,Campbell University,N/A,N/A,-,N/A,-,507,3.66
+#180,California University,"6,387",529,8%,244,46%,515,3.80
+#181,WCU COM,"3,657",741,20%,698,94%,504,3.56
+#182,San Juan Bautista,"1,242",194,16%,N/A,-,499,3.65
+#183,Alabama COM,"4,429","1,026",-,205,20%,504,3.38
+#184,California Northstate,"4,710",550,12%,N/A,-,514,3.86
+#185,Idaho COM,N/A,N/A,-,N/A,-,507,3.57
+#186,Universidad Central del Caribe,988,203,21%,N/A,-,499,3.77
+#187,Burrel COM,"5,036",N/A,-,N/A,-,501,3.48
+#188,SHSU COM,N/A,N/A,-,N/A,-,506,3.69
+#189,Incarnate Word,N/A,N/A,-,N/A,-,503,3.60
+#190,UT Tyler,N/A,N/A,-,N/A,-,505,3.84
+#191,Kansas Health Science,N/A,N/A,-,N/A,-,502,3.42
+#192,ATSU (Kirksville),N/A,N/A,-,N/A,-,503,3.71
+#193,Noorda COM,N/A,N/A,-,N/A,-,504,3.47

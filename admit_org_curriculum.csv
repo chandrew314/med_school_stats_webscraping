@@ -1,0 +1,192 @@
+School,AOA,AOA_before_match,Internal_rank,PC_grades,PC_length,Clerkship_grades,NBME_or_in_house,MSPE_adj,Lecture_attendance,Home_hospital
+Harvard Medical School,No,No,No,P/F,1.5 Years,P/F,Both,No,Required,"Boston Children’s Hospital, Brigham and Women’s Hospital, Cambridge Health Alliance, Massachusetts General Hospital, Beth Israel Deaconess Medical Center"
+Johns Hopkins,Yes,No,No,P/F,1.5 Years,P/F,In-House Exams,No,Optional,"Johns Hopkins Hospital, Johns Hopkins Bayview Medical Center, Johns Hopkins All Children’s Hospital"
+UPenn (Perelman),Yes,No,Yes,P/F,1.5 Years,H/HP/P/F,Both,Yes,Optional,"HUP, Pennsylvania Hospital, Penn Presbyterian, VA, Children's Hospital of Philadelphia"
+Columbia University,Yes,No,No,P/F,1.5 Years,H/HP/P/F,Both,No,Optional,Columbia University Irving Medical Center
+Duke University,No,No,No,P/F,1 Year,P/F,Both,No,Optional,Duke University Hospital
+Stanford University,No,No,No,P/F,2 Years,P/F,Both,Yes,Optional,Stanford University Hospital
+UCSF,No,No,No,P/F,1.5 Years,P/F,Both,No,Optional,UCSF Health
+Vanderbilt University,No,No,No,P/F,1 Year,P/F,Both,Yes,Optional,"Vanderbilt Adult Hospital, Psych Hospital, Children’s Hospital, and Rehab hospital"
+WashU St. Louis,No,No,No,P/F,1.5 Years,H/P/F,Both,No,Optional,Barnes-Jewish Hospital
+Weill Cornell Medicine,Yes,Yes,No,P/F,1.5 Years,H/HP/P/F,In-House Exams,No,Optional,NewYork-Presbyterian
+NYU Grossman,Yes,No,No,P/F,1 Year,H/HP/P/F,In-House Exams,Yes,Optional,"Tisch/Kimmel, Bellevue Hospital, VA Hospital"
+Yale School of Medicine,No,No,No,P/F,1.5 Years,P/F,NBME Based,No,Optional,Yale New Haven Hospital
+Mayo Clinic,No,No,No,P/F,1.5 Years,H/HP/P/F,NBME Based,Yes,Optional,Mayo Clinic
+Northwestern University,Yes,Yes,No,P/F,2 Years,H/HP/P/F,Both,Yes,Optional,Northwestern Memorial Hospital
+University of Michigan,Yes,Yes,Yes,P/F,1 Year,H/HP/P/F,In-House Exams,Yes,Optional,University Hospital
+University of Pittsburgh,No,No,No,P/F,1.5 Years,H/HP/P/F,In-House Exams,No,Required,University of Pittsburgh Medical Center
+University of Washington,Yes,Yes,Yes,P/F,2 Years,H/HP/P/F,Both,Yes,Required,UW Medical Center
+Icahn at Mount Sinai,No,No,No,P/F,1.5 Years,H/P/F,NBME Based,No,Optional,The Mount Sinai Hospital
+UCLA,No,No,No,P/F,1 Year,P/F,In-House Exams,No,Optional,UCLA Medical Center
+UChicago (Pritzker),Yes,Yes,No,P/F,1.5 Years,H/HP/P/F,Both,No,Optional,University of Chicago Medicine
+UCSD,No,No,No,P/F,2 Years,H/NH/P/F,In-House Exams,No,Optional,UCSD Medical Center
+Baylor,Yes,Yes,Yes,P/F,1.5 Years,P/F,NBME Based,Yes,Optional,Texas Medical Center
+Emory University,No,No,No,P/F,1.5 Years,P/F,In-House Exams,No,Optional,"Grady Memorial Hospital, Emory University Hospital"
+UTSW,Yes,Yes,Yes,P/F,1.5 Years,H/NH/HP/P/F,In-House Exams,No,Required,William P. Clements Jr. University Hospital
+Case Western Reserve,No,No,No,P/F,2 Years,H/HP/P/F,Both,No,Optional,"University Hospitals, Cleveland Clinic, MetroHealth Medical Center, and Louis Stokes VA Medical Center"
+Colorado,Yes,Yes,Yes,P/F,1 Year,H/HP/P/F,Both,No,Required,UC Hospital
+UNC,Yes,Yes,,,,,NBME Based,,Required,
+Ohio State University,Yes,Yes,Yes,P/F,1.5 Years,P/F,Both,Yes,Optional,The Ohio State University Wexner Medical Center
+USC (Keck),Yes,Yes,Yes,P/F,1.5 Years,H/HP/P/F,NBME Based,Yes,Optional,"Los Angeles General Hospital, Keck Medical Center, USC Norris Cancer Research Hospital, and Children's Hospital of Los Angeles"
+Oregon University,Yes,Yes,Yes,P/F,1.5 Years,P/F,NBME Based,Yes,Optional,OHSU Hospital
+University of Virginia,Yes,Yes,No,P/F,1.5 Years,A/B/C/F,Both,No,Optional,UVA University Hospital
+Boston University,Yes,Yes,No,P/F,1.5 Years,H/HP/P/F,In-House Exams,Yes,Optional,Boston Medical Center
+University of Maryland,Yes,Yes,Yes,H/HP/P/F,2 Years,H/HP/P/F,In-House Exams,Yes,Required,University of Maryland Medical Center
+University of Rochester,Yes,Yes,No,P/F,1 Year,H/HP/P/F,Both,Yes,Optional,Strong Memorial Hospital and Golisano Children’s Hospital
+Brown University,Yes,Yes,No,P/F,1.5 Years,H/HP/P/F,In-House Exams,No,Optional,None
+University of Alabama,Yes,Yes,Yes,P/F,2 Years,H/HP/P/F,Both,Yes,Optional,UAB Medicine
+University of Cincinnati,Yes,Yes,Yes,P/F,2 Years,H/HP/P/F,Both,Yes,Optional,UC Medical Center
+University of Florida,Yes,Yes,Yes,P/F,1.5 Years,A/B/C/D/F,Both,No,Optional,Shands Hospital
+University of Minnesota,Yes,Yes,No,P/F,2 Years,H/HP/P/F,Both,No,Required,University of Minnesota Medical Center
+University of Utah,Yes,Yes,No,P/F,1 Year,H/HP/P/F,Both,Yes,Optional,University of Utah Hospital
+University of Wisconsin,,,,,1.5 Years,,,,,
+Albert Einstein,Yes,Yes,No,P/F,1.5 Years,H/HP/LP/F,Both,No,Optional,Moses Medical Center
+Indiana University,Yes,Yes,No,P/F,2 Years,H/HP/P/F,Both,Yes,Required,IU Health
+UC Irvine,Yes,Yes,Yes,H/P/F,2 Years,H/P/F,NBME Based,Yes,Required,UCI Medical Center
+University of Iowa,Yes,Yes,No,H/NH/P/F,1.5 Years,H/NH/P/F,In-House Exams,Yes,Required,University of Iowa Hospitals and Clinics system
+UMass,Yes,Yes,Yes,P/F,1.5 Years,H/HP/P/F,Both,Yes,Optional,UMass Memorial Medical Center
+University of Miami,Yes,Yes,Yes,P/F,1.5 Years,H/HP/P/F,In-House Exams,Yes,Optional,"University of Miami hospital, Jackson Memorial, and the Veterans Administration Hospital Miami"
+Dartmouth (Geisel),Yes,Yes,No,P/F,1.5 Years,H/HP/P/F,In-House Exams,Yes,Required,Dartmouth Hitchcock Medical Center
+Wake Forest,Yes,Yes,Yes,P/F,1.5 Years,H/HP/P/LP/F,Both,Yes,Optional,Atrium Wake Forest Baptist
+UC Davis,No,No,No,P/F,2 Years,P/F,Both,No,Optional,UC Davis Medical Center
+USF (Morsani),Yes,No,No,H/HP/P/F,2 Years,H/HP/P/F,Both,Yes,Optional,"Tampa General Hospital, Moffitt Cancer Center, Tampa VA"
+Georgetown University,Yes,Yes,No,P/F,1.5 Years,H/HP/P/F,In-House Exams,Yes,Optional,MedStar Georgetown Hospital and MedStar Washington Hospital
+Tufts University,No,No,Yes,P/F,1.5 Years,H/HP/P/LP/F,In-House Exams,Yes,Optional,Tufts Medical Center
+University of Connecticut,No,,Yes,P/F,1.5 Years,H/P/F,In-House Exams,Yes,Required,John Dempsey Hospital
+Medical University of South Carolina,Yes,Yes,Yes,P/F,1.5 Years,H/HP/P/F,In-House Exams,Yes,Optional,MUSC Health University Medical Center
+McGovern (Houston),Yes,Yes,No,H/HP/P/BP/F,2 Years,H/HP/P/BP/F,Both,Yes,Required,"Memorial Hermann-Texas Medical Center, Children’s Memorial Hermann Hospital, Harris Health Lyndon B. Johnson Hospital, John S. Dunn Behavioral Sciences Center at UTHealth Houston, The University of Texas MD Anderson Cancer Center, TIRR Memorial Hermann"
+George Washington,Yes,Yes,No,P/F,1.5 Years,H/HP/P/F,Both,Yes,Optional,George Washington Hospital
+Stony Brook University,Yes,Yes,Yes,P/F,1.5 Years,H/HP/P/LP/F,NBME Based,Yes,Optional,Stony Brook University Hospital
+Jefferson (Kimmel),Yes,Yes,Yes,P/F,2 Years,H/HP/P/F,In-House Exams,Yes,Optional,Thomas Jefferson University Hospital
+University of Illinois,Yes,Yes,Yes,P/F,2 Years,H/HP/P/F,Both,Yes,Optional,UI Health
+University of Nebraska,,,Yes,,1.5 Years,,,Yes,,
+University of Arizona,,,,,2 Years,,,,,
+Texas A&M,,,,,2 Years,,,,,
+University of Kentucky,Yes,Yes,No,P/F,2 Years,P/F,Both,Yes,Optional,Chandler Medical Center
+University of Vermont,Yes,Yes,No,P/F,1.5 Years,P/F,Both,Yes,Optional,UVM Medical Center
+Virginia Commonwealth,Yes,Yes,Yes,P/F,1.5 Years,H/HP/P/F,In-House Exams,Yes,Optional,VCU Medical Center
+Hofstra,Yes,Yes,Yes,P/F,2 Years,H/HP/P/F,In-House Exams,Yes,Required,Northwell Health
+Rush University,Yes,Yes,No,P/F,2 Years,P/F,In-House Exams,Yes,Optional,Rush University Medical Center
+Rutgers (Robert Johnson),Yes,Yes,No,P/F,1.5 Years,H/HP/P/F,Both,Yes,Optional,Robert Wood Johnson University Hospital
+Rutgers New Jersey,Yes,Yes,Yes,H/HP/P/F,1.5 Years,H/HP/P/F,Both,Yes,Optional,University Hospital
+Temple University,Yes,Yes,Yes,P/F,2 Years,H/HP/P/F,Both,Yes,Optional,Temple University Hospital
+University of Tennessee,Yes,Yes,No,P/F,2 Years,H/HP/P/F,Both,Yes,Optional,None
+Wayne State University,Yes,Yes,Yes,H/P/F,1.5 Years,H/S+/S/F,Both,Yes,Optional,Detroit Medical Center
+University of Kansas,Yes,Yes,Yes,P/F,1.5 Years,H/P/F,In-House Exams,Yes,Optional,None
+Buffalo (Jacobs),Yes,Yes,Yes,P/F,2 Years,H/HP/P/F,Both,Yes,Optional,Buffalo General Hospital
+University of Arkansas,Yes,Yes,Yes,P/F,2 Years,A/B/C/D/F,Both,Yes,Optional,UAMS Medical Center
+University of Oklahoma,Yes,Yes,Yes,P/F,1.5 Years,A/B/C/D/F,Both,Yes,Optional,OU Medical Center
+Augusta University (MCG),,,,P/F,2 Years,,,,,
+Hackensack Meridian,No,No,Yes,P/F,1.5 Years,H/HP/P/F,In-House Exams,Yes,Required,Hackensack University Medical Center
+University of Hawaii,,,,P/F,2 Years,H/HP/P/F,,,,
+University of Louisville,Yes,Yes,Yes,P/F,2 Years,H/HP/P/F,Both,Yes,Optional,University of Louisville Health
+University of New Mexico,Yes,Yes,Yes,P/F,2 Years,H/HP/P/F,Both,Yes,Optional,UNM Hospital
+Virginia Tech,,,,,,,,,,
+Saint Louis University,Yes,Yes,Yes,P/F,1.5 Years,H/NH/P/F,Both,Yes,Optional,St. Louis University Hospital
+Missouri-Columbia,,,,,,,,,,
+West Virginia University,,,,,1 Year,,,,,
+Drexel University,,,,,,,,,,
+Michigan State University,Yes,Yes,No,P/F,1 Year,H/P/F,Both,Yes,Required,None
+SUNY Upstate,,,,,,,,,,
+Missouri-Kansas,Yes,Yes,No,A/B/C/D/F,1.5 Years,H/HP/SP/MP/F,In-House Exams,Yes,Optional,"University Health, Children’s Mercy Hospital"
+NYU Long Island,,,,,1.5 Years,,,,,
+Geisinger Commonwealth,Yes,Yes,Yes,P/F,1.5 Years,H/HP/P/F,Both,Yes,Required,Geisinger Medical Center
+University of Nevada (Reno),Yes,Yes,No,P/F,1.5 Years,H/HP/P/F,In-House Exams,Yes,Optional,Renown Regional Medical Center
+University of South Carolina,Yes,Yes,No,P/F,2 Years,A/B/C/D/F,Both,Yes,Optional,None
+Texas Tech University,Yes,Yes,Yes,P/F,1.5 Years,H/HP/P/F,Both,Yes,Optional,None
+UC Riverside,No,No,Yes,P/F,2 Years,H/HP/P/F,Both,Yes,Required,None
+Florida State University,Yes,Yes,No,P/F,2 Years,H/HP/P/F,NBME Based,Yes,Optional,None
+University of Central Florida,Yes,Yes,Yes,H/HP/P/F,2 Years,H/HP/P/F,In-House Exams,Yes,Required,UCF Lake Nona Hospital
+Eastern Virginia,Yes,Yes,Yes,P/F,1.5 Years,H/HP/P/F,NBME Based,Yes,Optional,Sentara Norfolk General Hospital
+New York Medical College,Yes,Yes,,,,,,,,
+University of Toledo,Yes,Yes,Yes,P/F,1.5 Years,H/HP/P/F,Both,Yes,Optional,University of Toledo Medical Center
+East Carolina University,,,,,,,,,,
+East Tennessee State,Yes,Yes,Yes,P/F,1.5 Years,H/P/F,NBME Based,Yes,Required,None
+Howard University,,,,,,,,,,
+Florida Atlantic University,,,,,1.5 Years,,,,,
+Florida International University,,,,,2 Years,,,,,
+Marshall University,Yes,Yes,Yes,H/P/F,1.5 Years,H/PF,Both,Yes,Optional,Marshall Health Network
+Northeast Ohio,Yes,Yes,Yes,P/F,2 Years,H/HP/P/F,Both,Yes,Optional,None
+Cooper (Rowan),Yes,Yes,Yes,P/F,2 Years,H/HP/P/F,In-House Exams,Yes,Optional,Cooper University Hospital
+Wright State University,Yes,Yes,Yes,P/F,1.5 Years,H/P/F,Both,Yes,Required,None
+Medical College of Wisconsin,Yes,Yes,No,P/F,1.5 Years,H/HP/P/F,In-House Exams,No,Optional,Froedtert Hospital
+Tulane University,Yes,Yes,Yes,P/F,1.5 Years,H/HP/P/F,Both,No,Optional,"East Jefferson, University Medical Center, VA Hospital"
+Uniformed Services,,,,,2 Years,,,,,
+Loyola University (Stritch),,,,,,,,,,
+Penn State University,Yes,Yes,Yes,P/F,1.5 Years,H/HP/P/F,In-House Exams,Yes,Required,Milton S. Hershey Medical Center
+Creighton University,Yes,Yes,No,H/P/F,2 Years,H/P/F,In-House Exams,No,Optional,Bergan Mercy Hospital and St. Joseph's Hospital
+Oklahoma State University,,,,,2 Years,,,,,
+UT Austin (Dell),,,,,,,,,,
+Kaiser Permanente (Tyson),,,,,2 Years,,,,,
+Michigan State COM,Yes,Yes,Yes,P/F,2 Years,H/P/F,In-House Exams,Yes,Optional,None
+LSU (New Orleans),Yes,Yes,Yes,H/HP/P/F,2 Years,H/HP/P/F,Both,Yes,Required,"Touro Infirmary, Children’s Hospital, and Ochsner Medical Center – Kenner"
+UT Medical Branch,Yes,Yes,Yes,P/F,2 Years,H/HP/P/F,NBME Based,Yes,Required,"John Sealy Hospital, Jennie Sealy Hospital"
+Arkansas COM,,,,,1.5 Years,,,,,
+University of Arizona (Phoenix),No,No,No,P/F,2 Years,H/HP/P/F,In-House Exams,Yes,Required,None
+University of North Dakota,Yes,Yes,Yes,P/F,2 Years,H/P/F,Both,Yes,Required,None
+University of Mississippi,Yes,Yes,,,2 Years,,,,,
+Rosalind Franklin,,,,,2 Years,,NBME Based,,,
+Southern Illinois University,Yes,Yes,No,P/F,2 Years,P/F,In-House Exams,No,Required,None
+Albany Medical College,Yes,Yes,,,1.5 Years,,,,,
+Loma Linda University,,,,,,,,,,
+West Virginia COM,,,,,1.5 Years,,,,,
+South Carolina (Greenville),Yes,Yes,Yes,P/F,2 Years,A/B/C/D/F,Both,Yes,Required,None
+SUNY Downstate,Yes,Yes,Yes,"P, ID, IDP, IDF",2 Years,H/HP/P/F,Both,Yes,Required,SUNY Downstate Medical Center
+Morehouse,Yes,Yes,No,H/P/F,2 Years,A/B/C/D/F,Both,No,Required,None
+University of Houston,No,No,,P/F,1.5 Years,H/P/F,Both,,Required,HCA Houston Healthcare
+University of North Texas,,,,,,,,,,
+Unviersity of South Dakota,Yes,Yes,Yes,P/F,1.5 Years,H/HP/P/F,Both,Yes,Optional,"Avera, Sanford, Monument"
+LSU (Shreveport),Yes,Yes,,,,H/HP/P/F,NBME Based,,,
+Ohio University (Heritage),,,,,2 Years,,,,,
+Mercer University,Yes,Yes,,P/F,,P/F,,,,
+University of Nevada (Vegas),Yes,Yes,No,P/F,1.5 Years,H/HP/P/F,Both,Yes,Required,University Medical Center
+University of New England,,,,,2 Years,,,,,
+University of South Alabama,Yes,Yes,Yes,H/P/F,2 Years,H/P/F,Both,Yes,Optional,"USA Health University Hospital, USA Health Children's and Women's Hospital, USA Health Providence Hospital, USA Health Mitchell Cancer Institute, and USA Health clinic network."
+CUNY School of Medicine,,,,,,,,,,
+Texas Tech (El Paso),Yes,Yes,Yes,P/F,1.5 Years,H/P/F,Both,Yes,Optional,University Medical Center
+Meharry Medical College,,,,,1.5 Years,,,,,
+Kansas City Biosciences,,,,,1.5 Years,,,,,
+Des Moines University,,,,,,,,,,
+PCOM,,,,,,,,,,
+Quinnipiac University,No,No,No,P/F,2 Years,H/HP/P/F,Both,Yes,Optional,None
+University of Puerto Rico,,,,,1.5 Years,,,,,
+Oakland University,Yes,Yes,Yes,H/P/F,2 Years,H/HP/P/F,In-House Exams,Yes,Optional,"Corewell in Royal Oak, Corewell Troy, Corewell Grosse Pointe"
+CCOM,,,,,,,,,,
+NYIT-COM,,,,,,,,,,
+Washington State (Floyd),,,,,,,,,,
+Western Michigan,Yes,Yes,Yes,P/F,1.5 Years,H/HP/P/F,In-House Exams,Yes,Required,Ascension Borgess and Bronson Methodist
+Central Michigan,Yes,Yes,No,P/F,2 Years,H/P/F,NBME Based,No,Optional,None
+UT Rio Grande Valley,Yes,Yes,Yes,P/F,2 Years,H/HP/P/F,In-House Exams,Yes,Optional,None
+VCOM,,,,,,,,,,
+LECOM,,,,,,,,,,
+Western University,,,,,,,,,,
+Rowan COM,,,,P/F,2 Years,,,,Optional,
+Rocky Vista University,,,,,,,,,,
+Texas Christian University,,,,,,,,,,
+Touro University California,,,,,,,,,,
+Pacific Northwest,,,,,,,,,,
+ATSU (Mesa),,,,,,,,,,
+Ponce Health Sciences,,,,,,,,,,
+Lincoln Memorial University,,,,,,,,,,
+Marian University,,,,,,,,,,
+Touro COM,,,,,,,,,,
+CHSU COM,,,,,,,,,,
+Nova Southeastern (Patel),Yes,Yes,Yes,P/F,1.5 Years,H/HP/P/F,NBME Based,Yes,Optional,None
+LUCOM,,,,,,,,,,
+Carle Illinois,Yes,Yes,No,S/SAR/US/W,1.5 Years,H/S/SAR/US/W,Both,Yes,Required,University of Illinois and Carle Hospital
+University of Pikeville,,,,,,,,,,
+Campbell University,,,,,,,,,,
+California University,No,No,No,P/F,1.5 Years,H/HP/P/F,Both,Yes,Required,None
+WCU COM,,,,,,,,,,
+San Juan Bautista,,,,,,,,,,
+Alabama COM,,,,,,,,,,
+California Northstate,,,,,,,,,,
+Idaho COM,,,,,,,,,,
+Universidad Central del Caribe,Yes,Yes,Yes,A/B/C/F,2 Years,A/B/C/F,Both,Yes,Required,HURRA Hospital
+Burrel COM,,,,,,,,,,
+SHSU COM,,,,,,,,,,
+Incarnate Word,,,,,,,,,,
+UT Tyler,Yes,Yes,No,P/F,1.5 Years,H/P/F,NBME Based,Yes,Optional,
+Kansas Health Science,,,,,,,,,,
+ATSU (Kirksville),,,,,,,,,,
+Noorda COM,,,,,,,,,,
