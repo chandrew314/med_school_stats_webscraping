@@ -16,6 +16,10 @@ df$Acceptance_rate <- as.numeric(as.numeric(df$Admits) / as.numeric(df$Applicati
 print(df$Acceptance_rate)
 df <- df[!is.na(df$Acceptance_rate),]
 
-ggplot(df, aes(x = Acceptance_rate, y = PC_grades)) + 
-    geom_text(aes(label = School), size = 3, position = position_jitter(seed = 1)) +
-    geom_jitter(position = position_jitter(seed = 1))
+ggplot(df[which(df$PC_grades == 'P/F' | df$PC_grades == 'H/P/F'), ], aes(x = Acceptance_rate, y = PC_grades)) + 
+    geom_text(aes(label = School), size = 3, position = position_jitter(seed = 2)) +
+    geom_jitter(position = position_jitter(seed = 2))
+
+## specifics
+school_list_df <- df[which(df$Acceptance_rate > 0.07 & (df$PC_grades == 'P/F' | df$PC_grades == 'H/P/F')), ]
+print(school_list_df)
