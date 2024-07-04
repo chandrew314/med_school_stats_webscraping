@@ -21,5 +21,11 @@ ggplot(df[which(df$PC_grades == 'P/F' | df$PC_grades == 'H/P/F'), ], aes(x = Acc
     geom_jitter(position = position_jitter(seed = 2))
 
 ## specifics
-school_list_df <- df[which(df$Acceptance_rate > 0.07 & (df$PC_grades == 'P/F' | df$PC_grades == 'H/P/F')), ]
+school_list_df <- df[which(df$Acceptance_rate > 0.07 & (df$PC_grades == 'P/F' | df$PC_grades == 'H/P/F') & (df$Internal_rank == 'No')), ]
+print(school_list_df)
+
+school_list_df <- df[which((df$PC_grades == 'P/F' | df$PC_grades == 'H/P/F') & (df$Internal_rank == 'No' | df$Internal_rank == '') ), ]
+print(school_list_df)
+
+school_list_df <- df[which((df$PC_grades == 'P/F' | df$PC_grades == 'H/P/F') & (df$Internal_rank == 'No' | df$Internal_rank == '') ), ]
 print(school_list_df)
