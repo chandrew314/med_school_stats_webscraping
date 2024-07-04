@@ -1,7 +1,7 @@
 import pandas as pd
-import thefuzz as fuzz
-from thefuzz import process
-from thefuzz import fuzz
+# import thefuzz as fuzz
+# from thefuzz import process
+# from thefuzz import fuzz
 
 admit_df = pd.read_csv('admit_org_stats_curriculum.csv')
 docs_df = pd.read_csv('2021_med_school_post_ii_stats.csv').dropna(axis = 1, how = 'all').dropna(axis = 0, how = 'all')
@@ -18,7 +18,7 @@ mapping_dict = {'Alabama COM': 'Alabama COM', 'Albany Medical College': 'Albany 
                 'Baylor': 'Baylor', 'Boston University': 'Boston University', 'Brown University': 'Brown - Alpert', 'Buffalo (Jacobs)': 'Buffalo', 
                 'Burrel COM': 'Burrel COM', 'California Northstate': 'California Northstate', 'California University': 'California University', 'Campbell University': 'Campbell University', 
                 'Carle Illinois': 'Carle Illinois', 'Case Western Reserve': 'Case Western Reserve', 'CCOM': 'CCOM', 'Central Michigan': 'Central Michigan', 
-                'CHSU COM': 'CHSU COM', 'Colorado': 'Colorado', 'Columbia University': 'Columbia University', 'Cooper (Rowan)': 'Cooper', 
+                'CHSU COM': 'CHSU COM', 'Colorado': 'Colorado', 'Columbia University': 'Columbia', 'Cooper (Rowan)': 'Cooper', 
                 'Creighton University': 'Creighton University', 'CUNY School of Medicine': 'CUNY School of Medicine', 'Dartmouth (Geisel)': 'Dartmouth (Geisel)', 'Des Moines University': 'Des Moines University', 
                 'Drexel University': 'Drexel', 'Duke University': 'Duke', 'East Carolina University': 'East Carolina (Brody ECU)', 'East Tennessee State': 'East Tennessee', 
                 'Eastern Virginia': 'Eastern Virginia Medical School (EVMS)', 'Emory University': 'Emory', 'Florida Atlantic University': 'FAU', 'Florida International University': 'Florida International University', 
@@ -74,11 +74,10 @@ admit_df = admit_df.replace({'School': mapping_dict})
 
 merge_df = pd.merge(admit_df, docs_df, how = 'left', on = ['School', 'School'])
 
-print(merge_df)
-print(len(admit_df))
-print(len(merge_df))
 merge_df.insert(3, 'USNWR Ranking Research', merge_df.pop('USNWR Ranking Research'))
 merge_df.insert(4, 'USNWR Primary Care Ranking', merge_df.pop('USNWR Primary Care Ranking'))
-merge_df.sort_values('USNWR Ranking Research')
+merge_df['Rank'] = merge_df['Rank'].str[1:]
+merge_df['Rank'] = merge_df['Rank'].astype(float)
+merge_df = merge_df.sort_values('Rank')
 
 merge_df.to_csv('admit_docs_merged.csv', encoding='utf-8', index = False)
