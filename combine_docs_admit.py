@@ -76,8 +76,23 @@ merge_df = pd.merge(admit_df, docs_df, how = 'left', on = ['School', 'School'])
 
 merge_df.insert(3, 'USNWR Ranking Research', merge_df.pop('USNWR Ranking Research'))
 merge_df.insert(4, 'USNWR Primary Care Ranking', merge_df.pop('USNWR Primary Care Ranking'))
+merge_df.insert(1, 'School_original', merge_df.pop('School_original'))
 merge_df['Rank'] = merge_df['Rank'].str[1:]
 merge_df['Rank'] = merge_df['Rank'].astype(float)
 merge_df = merge_df.sort_values('Rank')
+merge_df = merge_df.drop(merge_df.columns[[0]], axis = 1)
+merge_df = merge_df.drop(columns = ['School'])
+merge_df = merge_df.rename(columns = {'School_original': 'School'})
+
+## Calculate in-state vs out-of-state acceptance rates using docs data
+merge_df['IS_A'] = (merge_df['IS Accepted'].astype(float) / merge_df['Apps IS'].astype(float)) * 100
+merge_df['OOS_A'] = (merge_df['OOS Accepted'].astype(float) / merge_df['Apps OOS'].astype(float)) * 100
+merge_df['IS_A/OOS_A'] = merge_df['IS_A'] / merge_df['OOS_A']
+
+## discern public vs private and state more easily by parsing data in 'Public/Private' column
+merge_df['State'] = merge_df['Public/Private'].str.extract(r'(?:\-|\_)(.*)', expand = False)
+merge_df['State'] = merge_df['State'].str.strip()
+merge_df['Public/Private'] = merge_df['Public/Private'].str.extract(r'(.*)(?:\-|\_)')
+merge_df['Public/Private'] = merge_df['Public/Private'].str.strip()
 
 merge_df.to_csv('admit_docs_merged.csv', encoding='utf-8', index = False)
