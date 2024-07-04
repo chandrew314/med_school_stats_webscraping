@@ -6,3 +6,6 @@ I recently also added the code required to scrape [this document](https://docs.g
 
 ## Quirks
 There are 193 schools listed on admit.org, but when I scrape the tables from the web the resulting dataframes only have 191 rows/schools. I have no idea why, and I'm not CS person so someone else can figure it out bc I'm too lazy to.
+
+## Figures!
+![Figure1](myplot.jpeg)
