@@ -10,7 +10,7 @@ There are 193 schools listed on admit.org, but when I scrape the tables from the
 ## Figures!
 ### In-state bias among private/public schools
 ![Figure1](myplot.jpeg)
-_Note. I calculate in-state bias as the $`\frac{\text{in-state acceptance rate}}{\text{out-of-state acceptance rate}}`$ as a measure of how much a medical school favors in-state applicants in comparison to out-of-state applicants._
+_Note. I calculate in-state bias as the $`\frac{\text{in-state acceptance rate}}{\text{out-of-state acceptance rate}}`$, which acts as a measure of how much a medical school favors in-state applicants in comparison to out-of-state applicants._
 
 ### Which medical schools hate their own state's citizens? (haha jk...unless?)
 ![Figure2](myplot2.jpeg)
