@@ -95,4 +95,7 @@ merge_df['State'] = merge_df['State'].str.strip()
 merge_df['Public/Private'] = merge_df['Public/Private'].str.extract(r'(.*)(?:\-|\_)')
 merge_df['Public/Private'] = merge_df['Public/Private'].str.strip()
 
+## fix someone's mistake bc they put the location of UMich as Wisconsin smh
+merge_df.loc[merge_df['School'] == 'University of Michigan', 'State'] = 'MI'
+
 merge_df.to_csv('admit_docs_merged.csv', encoding='utf-8', index = False)

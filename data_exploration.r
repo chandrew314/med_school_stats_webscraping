@@ -59,6 +59,62 @@ p1 <- ggplot(merge_df, aes(x = IS_A.OOS_A, y = Acceptance_rate, colour = Public.
         scale_y_log10(breaks = trans_breaks("log10", function(x) 10^x),
             labels = trans_format("log10", math_format(10^.x))) +
         scale_color_manual(values = natparks.pals("Saguaro", 2), name = 'Public/Private') + 
-        labs(x = 'log10(in-state acceptance rate / out-of-state acceptance rate)', y = 'log10(Acceptance rate)') 
+        labs(x = 'log10(In-state bias) = log10(in-state acceptance rate / out-of-state acceptance rate)', y = 'log10(Acceptance rate)') 
 
 # ggsave('myplot.jpeg', p1, width = 15, height = 10, dpi = 300)
+
+#######################################################
+## figure for which state's public schools have the most in-state bias
+#######################################################
+merge_df <- read.csv('admit_docs_merged.csv', header = TRUE)
+merge_df$Applications <- gsub("\\D+", "", merge_df$Applications)
+merge_df$Public.Private <- factor(merge_df$Public.Private)
+merge_df$Acceptance_rate <- as.numeric(as.numeric(merge_df$Admits) / as.numeric(merge_df$Applications))
+
+## filter by only public schools
+public_df <- merge_df[which(merge_df$Public.Private == 'Public'), ]
+
+## metric for in-state bias = school-specific in-state acceptance rate / average in-state acceptance rate for all public schools
+avg_accep_instate_public <- (sum(public_df$IS.Accepted) / sum(public_df$Apps.IS)) * 100
+public_df$IS_bias_public <- public_df$IS_A / avg_accep_instate_public
+public_df$State <- factor(public_df$State)
+
+## plot In-state acceptance rate / Avg. in-state acceptance rate among public schools and acceptance rate
+p2 <- ggplot(public_df, aes(x = IS_bias_public, y = State, colour = Acceptance_rate)) + 
+        geom_point(alpha = 0.8, size = 1.5) + 
+        geom_text_repel(
+            data = public_df,
+            aes(label = School),
+            min.segment.length = 0,
+            force = 30,
+            max.iter = 5000,
+            max.overlaps = Inf
+        ) +
+        # scale_x_log10(breaks = trans_breaks("log10", function(x) 10^x),
+        #     labels = trans_format("log10", math_format(10^.x))) +
+        # scale_y_log10(breaks = trans_breaks("log10", function(x) 10^x),
+        #     labels = trans_format("log10", math_format(10^.x))) +
+        scale_color_gradientn(colors = natparks.pals("Denali"), name = 'Acceptance Rate') + 
+        labs(x = 'In-state acceptance rate / Avg. in-state acceptance rate among public schools') 
+
+ggsave('myplot2.jpeg', p2, width = 13, height = 10, dpi = 300)
+
+## plot
+p3 <- ggplot(public_df, aes(x = IS_bias_public, y = State, colour = log10(IS_A.OOS_A))) + 
+        geom_point(alpha = 0.8, size = 1.5) + 
+        geom_text_repel(
+            data = public_df,
+            aes(label = School),
+            min.segment.length = 0,
+            force = 30,
+            max.iter = 5000,
+            max.overlaps = Inf
+        ) +
+        # scale_x_log10(breaks = trans_breaks("log10", function(x) 10^x),
+        #     labels = trans_format("log10", math_format(10^.x))) +
+        # scale_y_log10(breaks = trans_breaks("log10", function(x) 10^x),
+        #     labels = trans_format("log10", math_format(10^.x))) +
+        scale_color_gradientn(colors = natparks.pals("SmokyMtns"), name = 'log10(In-state bias)', labels = scales::label_math()) + 
+        labs(x = 'In-state acceptance rate / Avg. in-state acceptance rate among public schools') 
+
+ggsave('myplot3.jpeg', p3, width = 13, height = 10, dpi = 300)

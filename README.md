@@ -8,4 +8,12 @@ I recently also added the code required to scrape [this document](https://docs.g
 There are 193 schools listed on admit.org, but when I scrape the tables from the web the resulting dataframes only have 191 rows/schools. I have no idea why, and I'm not CS person so someone else can figure it out bc I'm too lazy to.
 
 ## Figures!
+### In-state bias among private/public schools
 ![Figure1](myplot.jpeg)
+
+### Which medical schools hate their own state's citizens? (haha jk...unless?)
+![Figure2](myplot2.jpeg)
+![Figure3](myplot3.jpeg)
+_Note. I use the $`\frac{in-state acceptance rate}{Average in-state acceptance rate among public schools}`$ as a measure of how much a medical school favors in-state applicants in comparison to that of_ other _public medical schools. All of that to say_&mdash;_it's a \(not very well-thought-out/crude\) metric of how much a medical schools favors in-state applicants in comparison to other medical schools._
+
+
