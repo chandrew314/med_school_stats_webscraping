@@ -59,7 +59,7 @@ p1 <- ggplot(merge_df, aes(x = IS_A.OOS_A, y = Acceptance_rate, colour = Public.
         scale_y_log10(breaks = trans_breaks("log10", function(x) 10^x),
             labels = trans_format("log10", math_format(10^.x))) +
         scale_color_manual(values = natparks.pals("Saguaro", 2), name = 'Public/Private') + 
-        labs(x = 'log10(In-state bias) = log10(in-state acceptance rate / out-of-state acceptance rate)', y = 'log10(Acceptance rate)') 
+        labs(x = 'log10(in-state acceptance rate / out-of-state acceptance rate)', y = 'log10(Acceptance rate)') 
 
 # ggsave('myplot.jpeg', p1, width = 15, height = 10, dpi = 300)
 
