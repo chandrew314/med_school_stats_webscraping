@@ -18,5 +18,6 @@ _Note. I use the $`\frac{\text{in-state acceptance rate}}{\text{Average in-state
 #### Evaluation metrics
 <img src = "https://github.com/chandrew314/med_school_stats_webscraping/blob/main/ROC_curve.jpeg" width = "500" />
 <img src = "https://github.com/chandrew314/med_school_stats_webscraping/blob/main/VIP.jpeg" width = "500" />
+
 ![Figure4](map2.jpeg)
 _Note. Yes, I am missing a lot of med schools, which sucks because then the ML algorithm could probably better classify schools' OOS friendliness. But also, making this map was hell_&mdash;_I can't imagine trying to add even more schools to it without throwing myself at the wall. Take these results with a grain of salt as no algorithm is perfect, and it's up to you which schools you're willing to go to. :)_
