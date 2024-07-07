@@ -14,5 +14,9 @@ _Note. I calculate in-state bias as the $`\frac{\text{in-state acceptance rate}}
 ![Figure3](myplot3.jpeg)
 _Note. I use the $`\frac{\text{in-state acceptance rate}}{\text{Average in-state acceptance rate among public schools}}`$ as a measure of how much a medical school favors in-state applicants in comparison to that of_ other _public medical schools. All of that to say_&mdash;_it's a \(not very well-thought-out/crude\) metric of how much a public medical school favors in-state applicants in comparison to how much other public medical schools favor in-state applicants._
 
-### Random forest binary classification prediction model results: Which states are objectively OOS friendly?
+### Random forest binary classification prediction model: Which states are objectively OOS friendly?
+#### Evaluation metrics
+![Figure5](ROC_curve.jpeg)
+![Figure6](VIP.jpeg)
 ![Figure4](map2.jpeg)
+_Note. Yes, I am missing a lot of med schools, which sucks because then the ML algorithm could probably better classify schools' OOS friendliness. But also, making this map was hell_&mdash;_I can't imagine trying to add even more schools to it without throwing myself at the wall. Take these results with a grain of salt as no algorithm is perfect, and it's up to you which schools you're willing to go to. :)_
