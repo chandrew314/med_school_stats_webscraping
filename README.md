@@ -14,4 +14,5 @@ _Note. I calculate in-state bias as the $`\frac{\text{in-state acceptance rate}}
 ![Figure3](myplot3.jpeg)
 _Note. I use the $`\frac{\text{in-state acceptance rate}}{\text{Average in-state acceptance rate among public schools}}`$ as a measure of how much a medical school favors in-state applicants in comparison to that of_ other _public medical schools. All of that to say_&mdash;_it's a \(not very well-thought-out/crude\) metric of how much a public medical school favors in-state applicants in comparison to how much other public medical schools favor in-state applicants._
 
-
+### Random forest binary classification prediction model results: Which states are objectively OOS friendly?
+![Figure4](map.jpeg)
