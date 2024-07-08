@@ -98,4 +98,46 @@ merge_df['Public/Private'] = merge_df['Public/Private'].str.strip()
 ## fix someone's mistake bc they put the location of UMich as Wisconsin smh
 merge_df.loc[merge_df['School'] == 'University of Michigan', 'State'] = 'MI'
 
+## standardize/add classification on if schools are OOS friendly
+# print(merge_df['apply OOS to public state school?'].unique())
+## i also take out the maybe schools and utah and label them as NA for prediction later
+mapping_dict2 = {'YES': 'yes', 'YES but low yield': '', 'YES but check out tuition': 'yes', 'no': 'no', 'Yes': 'yes', 'Maybe if ties': '', 
+                 'if u mormon': '', 'NO NO NO': 'no', 'nah check out their OOS tuition': '', 'yes maybe?': '', 'yes if ties to state': '', 
+                 'maybe': '', 'YES ': 'yes'}
+merge_df = merge_df.replace({'apply OOS to public state school?': mapping_dict2})
+
 merge_df.to_csv('admit_docs_merged.csv', encoding='utf-8', index = False)
+
+## fill in some other schools with concensus on OOS friendliness
+## based on https://www.reddit.com/r/premed/wiki/schoollist/
+## all TX schools are a no, UW is a no
+## thresholds: 25% OOS > = no; 25% OOS - 50% OOS = maybe; 50% OOS < yes
+## if doc and reddit disagree, I put it as maybe --> will use ML to predict these later
+
+
+merge_df.loc[merge_df['Public/Private'] == 'Private', 'apply OOS to public state school?'] = 'yes'
+
+## remove uncertain schools
+uncertain_privates_list = ['Baylor', 'Geisinger Commonwealth', 'University of Cincinnati', 'UNC']
+merge_df.loc[merge_df['School'].isin(uncertain_privates_list), 'apply OOS to public state school?'] = ''
+
+OOS_yes_list = ['Eastern Virginia', 'Oakland University', 'Ohio State University', 'Penn State University', 'University of Vermont', 'West Virginia University', 
+                'University of Michigan', 'Western Michigan']
+# OOS_maybe_list = ['Baylor', 'Geisinger Commonwealth', 'Indiana University', 'University of Arizona', 'University of Arizona (Phoenix)', 
+#                   'UCLA', 'University of Cincinnati', 'Colorado', 'University of Iowa', 'University of Kentucky', 'University of Maryland',
+#                   'University of Nevada (Reno)', 'University of South Carolina', 'South Carolina (Greenville)', 'Unviersity of South Dakota', 
+#                   'University of Utah', 'University of Wisconsin', 'USF (Morsani)', 'Virginia Commonwealth', 'Wayne State University', 'Wright State University',
+#                   'UMass', 'Stony Brook University', 'University of Illinois', 'University of Central Florida', 'Florida Atlantic University']
+OOS_no_list = ['East Carolina University', 'Central Michigan', 'CUNY School of Medicine', 'UTSW', 'McGovern (Houston)', 'Texas A&M', 
+               'East Tennessee State', 'Florida State University', 'Buffalo (Jacobs)', 'LSU (New Orleans)', 'LSU (Shreveport)', 'Marshall University', 
+               'Augusta University (MCG)', 'Medical College of Wisconsin', 'Mercer University', 'Michigan State University', 'Northeast Ohio', 'Southern Illinois University', 
+               'SUNY Downstate', 'SUNY Upstate', 'University of Alabama', 'University of Arkansas', 'UC Davis', 'UC Irvine', 
+               'University of Florida', 'University of Hawaii', 'University of Kansas', 'University of Louisville', 'University of Mississippi', 'Missouri-Columbia',
+               'University of Nebraska', 'University of New Mexico', 'University of Oklahoma', 'University of South Alabama', 'University of Tennessee']
+
+
+merge_df.loc[merge_df['School'].isin(OOS_yes_list), 'apply OOS to public state school?'] = 'yes'
+merge_df.loc[merge_df['School'].isin(OOS_no_list), 'apply OOS to public state school?'] = 'no'
+
+
+merge_df.to_csv('admit_docs_merged_ML.csv', encoding='utf-8', index = False)
