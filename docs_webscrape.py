@@ -3,9 +3,10 @@ import csv
 import requests
 import os
 
-html = requests.get('https://docs.google.com/spreadsheets/d/1tYAHFUP-X_Rj-nR1AerAMr5V5blIUV4_gkJ7p2COchk/edit?gid=514048617#gid=514048617').text
+html = requests.get('https://docs.google.com/spreadsheets/d/1tYAHFUP-X_Rj-nR1AerAMr5V5blIUV4_gkJ7p2COchk/gviz/tq?tqx=out:html')
+html.encoding='utf-8'
 
-soup = BeautifulSoup(html, "lxml")
+soup = BeautifulSoup(html.text, "lxml")
 tables = soup.find_all("table")
 index = 0
 for table in tables:

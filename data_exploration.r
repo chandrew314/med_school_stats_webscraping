@@ -98,7 +98,7 @@ p2 <- ggplot(public_df, aes(x = IS_bias_public, y = State, colour = Acceptance_r
         scale_y_discrete(limits = rev(levels(public_df$State))) +
         labs(x = 'In-state acceptance rate / Avg. in-state acceptance rate among public schools') 
 
-# ggsave('myplot2.jpeg', p2, width = 13, height = 10, dpi = 300)
+ggsave('myplot2.jpeg', p2, width = 13, height = 10, dpi = 300)
 
 ## plot
 p3 <- ggplot(public_df, aes(x = IS_bias_public, y = State, colour = log10(IS_A.OOS_A))) + 
@@ -119,7 +119,7 @@ p3 <- ggplot(public_df, aes(x = IS_bias_public, y = State, colour = log10(IS_A.O
         scale_y_discrete(limits = rev(levels(public_df$State))) +
         labs(x = 'In-state acceptance rate / Avg. in-state acceptance rate among public schools') 
 
-# ggsave('myplot3.jpeg', p3, width = 13, height = 10, dpi = 300)
+ggsave('myplot3.jpeg', p3, width = 13, height = 10, dpi = 300)
 
 
 #######################################################
@@ -139,7 +139,7 @@ private_df$IS_bias_private <- private_df$IS_A / avg_accep_instate_private
 private_df$State <- factor(private_df$State)
 
 ## plot In-state acceptance rate / Avg. in-state acceptance rate among public schools and acceptance rate
-p2 <- ggplot(private_df, aes(x = IS_bias_private, y = State, colour = Acceptance_rate)) + 
+p4 <- ggplot(private_df, aes(x = IS_bias_private, y = State, colour = Acceptance_rate)) + 
         geom_point(alpha = 0.8, size = 1.5) + 
         geom_text_repel(
             data = private_df,
@@ -157,10 +157,10 @@ p2 <- ggplot(private_df, aes(x = IS_bias_private, y = State, colour = Acceptance
         scale_y_discrete(limits = rev(levels(private_df$State))) +
         labs(x = 'In-state acceptance rate / Avg. in-state acceptance rate among private schools') 
 
-# ggsave('myplot2.jpeg', p2, width = 13, height = 10, dpi = 300)
+# ggsave('myplot4.jpeg', p4, width = 13, height = 10, dpi = 300)
 
 ## plot
-p3 <- ggplot(private_df, aes(x = IS_bias_private, y = State, colour = log10(IS_A.OOS_A))) + 
+p5 <- ggplot(private_df, aes(x = IS_bias_private, y = State, colour = log10(IS_A.OOS_A))) + 
         geom_point(alpha = 0.8, size = 1.5) + 
         geom_text_repel(
             data = private_df,
@@ -178,4 +178,4 @@ p3 <- ggplot(private_df, aes(x = IS_bias_private, y = State, colour = log10(IS_A
         scale_y_discrete(limits = rev(levels(private_df$State))) +
         labs(x = 'In-state acceptance rate / Avg. in-state acceptance rate among private schools') 
 
-# ggsave('myplot3.jpeg', p3, width = 13, height = 10, dpi = 300)
+# ggsave('myplot5.jpeg', p5, width = 13, height = 10, dpi = 300)

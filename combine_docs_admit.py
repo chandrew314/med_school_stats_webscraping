@@ -1,17 +1,18 @@
 import pandas as pd
+import numpy as np
 # import thefuzz as fuzz
 # from thefuzz import process
 # from thefuzz import fuzz
 
 admit_df = pd.read_csv('admit_org_stats_curriculum.csv')
 docs_df = pd.read_csv('2021_med_school_post_ii_stats.csv').dropna(axis = 1, how = 'all').dropna(axis = 0, how = 'all')
+docs_df.replace({'\xa0': np.nan}, regex=True, inplace=True)
+docs_df = docs_df.dropna(axis = 1, how = 'all').dropna(axis = 0, how = 'all')
+docs_df = docs_df[docs_df['Total apps'].notna()]
 
 # admit_df['School'] = admit_df['School'].apply(
 #   lambda x: process.extractOne(x, docs_df['School'], scorer = fuzz.partial_token_sort_ratio)[0]
 # )
-
-print(admit_df['School'].tolist().sort())
-print(list(docs_df['School']).sort())
 
 mapping_dict = {'Alabama COM': 'Alabama COM', 'Albany Medical College': 'Albany Medical College', 'Albert Einstein': 'Albert Einstein', 
                 'Arkansas COM': 'Arkansas', 'ATSU (Kirksville)': 'ATSU (Kirksville)', 'ATSU (Mesa)': 'ATSU (Mesa)', 'Augusta University (MCG)': 'MCG Augusta', 
@@ -24,13 +25,13 @@ mapping_dict = {'Alabama COM': 'Alabama COM', 'Albany Medical College': 'Albany 
                 'Eastern Virginia': 'Eastern Virginia Medical School (EVMS)', 'Emory University': 'Emory', 'Florida Atlantic University': 'FAU', 'Florida International University': 'Florida International University', 
                 'Florida State University': 'Florida State University', 'Geisinger Commonwealth': 'Geisinger Commonwealth', 'George Washington': 'George Washington Univ', 
                 'Georgetown University': 'Georgetown', 'Hackensack Meridian': 'Hackensack Meridian', 'Harvard Medical School': 'Harvard', 'Hofstra': 'Hofstra', 
-                'Howard University': 'Howard University', 'Icahn at Mount Sinai': 'Icahn Mt. Sinai', 'Idaho COM': 'Idaho COM', 'Incarnate Word': 'Incarnate Word', 
+                'Howard University': 'Howard', 'Icahn at Mount Sinai': 'Icahn Mt. Sinai', 'Idaho COM': 'Idaho COM', 'Incarnate Word': 'Incarnate Word', 
                 'Indiana University': 'Indiana', 'Jefferson (Kimmel)': 'Jefferson (Sidney Kimmel)', 'Johns Hopkins': 'Johns Hopkins', 'Kaiser Permanente (Tyson)': 'Kaiser Permanente (Tyson)', 
                 'Kansas City Biosciences': 'Kansas City Biosciences', 'Kansas Health Science': 'Kansas Health Science', 'LECOM': 'LECOM', 'Lincoln Memorial University': 'Lincoln Memorial University', 
-                'Loma Linda University': 'Loma Linda University', 'Loyola University (Stritch)': 'Loyola University (Stritch)', 'LSU (New Orleans)': 'LSU (New Orleans)', 'LSU (Shreveport)': 'LSU (Shreveport)', 
-                'LUCOM': 'LUCOM', 'Marian University': 'Marian University', 'Marshall University': 'Marshall University', 'Mayo Clinic': 'Mayo (Alix)', 
-                'McGovern (Houston)': 'McGovern Medical School at UT Houston', 'Medical College of Wisconsin': 'Medical College of Wisconsin', 'Medical University of South Carolina': 'Medical University of South Carolina', 'Meharry Medical College': 'Meharry Medical College', 
-                'Mercer University': 'Mercer University', 'Michigan State COM': 'Michigan State COM', 'Michigan State University': 'Michigan State University', 'Missouri-Columbia': 'Missouri - Columbia', 
+                'Loma Linda University': 'Loma Linda University', 'Loyola University (Stritch)': 'Loyola University Chicago Stritch School of Medicine', 'LSU (New Orleans)': 'LSU (New Orleans)', 'LSU (Shreveport)': 'LSU Shreveport', 
+                'LUCOM': 'LUCOM', 'Marian University': 'Marian University', 'Marshall University': 'Marshall', 'Mayo Clinic': 'Mayo (Alix)', 
+                'McGovern (Houston)': 'McGovern Medical School at UT Houston', 'Medical College of Wisconsin': 'MCW (unranked 2021)', 'Medical University of South Carolina': 'MUSC', 'Meharry Medical College': 'Meharry Medical College', 
+                'Mercer University': 'Mercer University', 'Michigan State COM': 'Michigan State COM', 'Michigan State University': 'Michigan State (unranked 2021)', 'Missouri-Columbia': 'Missouri - Columbia', 
                 'Missouri-Kansas': 'Missouri - Kansas City', 'Morehouse': 'Morehouse', 'New York Medical College': 'NYMC', 'Noorda COM': 'Noorda COM', 
                 'Northeast Ohio': 'Northeast Ohio', 'Northwestern University': 'Northwestern Feinberg', 'Nova Southeastern (Patel)': 'Nova Southeastern (Patel)', 'NYIT-COM': 'NYIT-COM', 
                 'NYU Grossman': 'NYU', 'NYU Long Island': 'NYU Long Island', 'Oakland University': 'Oakland University', 'Ohio State University': 'Ohio State', 
@@ -40,7 +41,7 @@ mapping_dict = {'Alabama COM': 'Alabama COM', 'Albany Medical College': 'Albany 
                 'Rutgers (Robert Johnson)': 'Rutgers RWJMS', 'Rutgers New Jersey': 'Rutgers NJMS', 'Saint Louis University': 'Saint Louis University', 'San Juan Bautista': 'San Juan Bautista', 
                 'SHSU COM': 'SHSU COM', 'South Carolina (Greenville)': 'U South Carolina', 'Southern Illinois University': 'Southern Illinois University', 'Stanford University': 'Stanford', 
                 'Stony Brook University': 'Stony Brook', 'SUNY Downstate': 'SUNY Downstate', 'SUNY Upstate': 'SUNY Upstate', 'Temple University': 'Temple (LKSOM)', 
-                'Texas A&M': 'Texas A&M', 'Texas Christian University': 'Texas Christian University', 'Texas Tech (El Paso)': 'Texas Tech (El Paso)', 'Texas Tech University': 'Texas Tech University', 
+                'Texas A&M': 'Texas A&M', 'Texas Christian University': 'TCU & University of North Texas Health Science Center', 'Texas Tech (El Paso)': 'Texas Tech El Paso (unranked 2021)', 'Texas Tech University': 'Texas Tech Lubbock', 
                 'Touro COM': 'Touro COM', 'Touro University California': 'Touro University California', 'Tufts University': 'Tufts', 'Tulane University': 'Tulane University', 
                 'UC Davis': 'UC Davis', 'UC Irvine': 'UC Irvine', 'UC Riverside': 'UC Riverside', 'UChicago (Pritzker)': 'University of Chicago Pritzker', 
                 'UCLA': 'UCLA', 'UCSD': 'UC San Diego', 'UCSF': 'UC San Franscisco', 'UMass': 'Massachusetts', 
@@ -51,16 +52,16 @@ mapping_dict = {'Alabama COM': 'Alabama COM', 'Albany Medical College': 'Albany 
                 'University of Kentucky': 'Kentucky', 'University of Louisville': 'Louisville', 'University of Maryland': 'U Maryland', 'University of Miami': 'Miami', 
                 'University of Michigan': 'Michigan', 'University of Minnesota': 'Minnesota', 'University of Mississippi': 'University of Mississippi', 'University of Nebraska': 'Nebraska', 
                 'University of Nevada (Reno)': 'Nevada Reno', 'University of Nevada (Vegas)': 'University of Nevada (Vegas)', 'University of New England': 'University of New England', 'University of New Mexico': 'New Mexico', 
-                'University of North Dakota': 'University of North Dakota', 'University of North Texas': 'University of North Texas', 'University of Oklahoma': 'Oklahoma', 'University of Pikeville': 'University of Pikeville', 
+                'University of North Dakota': 'North Dakota (unranked 2021)', 'University of North Texas': 'University of North Texas', 'University of Oklahoma': 'Oklahoma', 'University of Pikeville': 'University of Pikeville', 
                 'University of Pittsburgh': 'University of Pittsburgh', 'University of Puerto Rico': 'University of Puerto Rico', 'University of Rochester': 'Rochester', 'University of South Alabama': 'University of South Alabama', 
-                'University of South Carolina': 'U South Carolina', 'University of Tennessee': 'University of Tennessee', 'University of Toledo': 'University of Toledo', 'University of Utah': 'Utah', 
+                'University of South Carolina': 'U South Carolina', 'University of Tennessee': 'Tennessee', 'University of Toledo': 'Toledo', 'University of Utah': 'Utah', 
                 'University of Vermont': 'University of Vermont (Larner)', 'University of Virginia': 'University of Virginia', 'University of Washington': 'University of Washington', 'University of Wisconsin': 'Wisconsin', 
-                'Unviersity of South Dakota': 'Unviersity of South Dakota', 'UPenn (Perelman)': 'University of Pennsylvania (Perelman)', 'USC (Keck)': 'USC - Keck', 'USF (Morsani)': 'USF Health Morsani College of Medicine', 
+                'Unviersity of South Dakota': 'South Dakota (unranked 2021)', 'UPenn (Perelman)': 'University of Pennsylvania (Perelman)', 'USC (Keck)': 'USC - Keck', 'USF (Morsani)': 'USF Health Morsani College of Medicine', 
                 'UT Austin (Dell)': 'UT Austin (Dell)', 'UT Medical Branch': 'UT Medical Branch', 'UT Rio Grande Valley': 'UT Rio Grande Valley', 'UT Tyler': 'UT Tyler', 
                 'UTSW': 'UT Southwestern', 'Vanderbilt University': 'Vanderbilt', 'VCOM': 'VCOM', 'Virginia Commonwealth': 'Virginia Commonwealth University', 
                 'Virginia Tech': 'Virginia Tech', 'Wake Forest': 'Wake Forest', 'Washington State (Floyd)':  'Washington State (Floyd)', 'WashU St. Louis': 'Wash U St. Louis', 
                 'Wayne State University': 'Wayne State', 'WCU COM': 'WCU COM', 'Weill Cornell Medicine': 'Cornell (Weill)', 'West Virginia COM': 'West Virginia COM', 
-                'West Virginia University': 'West Virginia University', 'Western Michigan': 'Western Michigan', 'Western University': 'Western University', 'Wright State University': 'Wright State University', 
+                'West Virginia University': 'West Virginia University', 'Western Michigan': 'Western Michigan', 'Western University': 'Western University', 'Wright State University': 'Wright State Boonshoft', 
                 'Yale School of Medicine': 'Yale'}
 ## I think admi.org is missing UT San Antonio
 # docs_school_list = ['Alabama - Birmingham', 'Albert Einstein', 'Arizona- Tuscon', 'Arkansas', 'Baylor', 'Boston University', 'Brown - Alpert', 'Buffalo', 'Case Western Reserve', 'Cincinnati', 'Colorado', 'Columbia', 'Cooper', 'Cornell (Weill)', 'Dartmouth (Geisel)', 'Drexel', 'Duke', 'East Carolina (Brody ECU)', 'East Tennessee', 'Eastern Virginia Medical School (EVMS)', 'Emory', 'FAU', 'Florida International University', 'Florida State University', 'Frank H Netter Quinnipiac', 'George Washington Univ', 'Georgetown', 'Harvard', 'Hawaii', 'Hofstra', 'Icahn Mt. Sinai', 'Illinois', 'Indiana', 'Iowa', 'Jefferson (Sidney Kimmel)', 'Johns Hopkins', 'Kansas', 'Kentucky', 'Louisville', 'Massachusetts', 'Mayo (Alix)', 'MCG Augusta', 'McGovern Medical School at UT Houston', 'Miami', 'Michigan', 'Minnesota', 'Missouri - Columbia', 'Missouri - Kansas City', 'Nebraska', 'Nevada Reno', 'New Mexico', 'Northwestern Feinberg', 'NYMC', 'NYU', 'Ohio State', 'Oklahoma', 'Oregon', 'Rochester', 'Rush', 'Rutgers NJMS', 'Rutgers RWJMS', 'Saint Louis University', 'Stanford', 'Stony Brook', 'SUNY Upstate', 'Temple (LKSOM)', 'Texas A&M', 'Tufts', 'U Connecticut', 'U Maryland', 'U South Carolina', 'UC Davis', 'UC Irvine', 'UC San Diego', 'UC San Franscisco', 'UCF (Central Florida)', 'UCLA', 'University of Chicago Pritzker', 'University of Florida', 'University of North Carolina', 'University of Pennsylvania (Perelman)', 'University of Pittsburgh', 'University of Vermont (Larner)', 'University of Virginia', 'University of Washington', 'USC - Keck', 'USF Health Morsani College of Medicine', 'UT San Antonio', 'UT Southwestern', 'Utah', 'Vanderbilt', 'Virginia Commonwealth University', 'Virginia Tech', 'Wake Forest', 'Wash U St. Louis', 'Wayne State', 'West Virginia University', 'Wisconsin', 'Yale']
@@ -98,12 +99,15 @@ merge_df['Public/Private'] = merge_df['Public/Private'].str.strip()
 ## fix someone's mistake bc they put the location of UMich as Wisconsin smh
 merge_df.loc[merge_df['School'] == 'University of Michigan', 'State'] = 'MI'
 
+## fix someone's mistake bc they put the abbreviation of Arkansas as AK and not AR
+merge_df.loc[merge_df['School'] == 'University of Arkansas', 'State'] = 'AR'
+
 ## standardize/add classification on if schools are OOS friendly
 # print(merge_df['apply OOS to public state school?'].unique())
 ## i also take out the maybe schools and utah and label them as NA for prediction later
-mapping_dict2 = {'YES': 'yes', 'YES but low yield': '', 'YES but check out tuition': 'yes', 'no': 'no', 'Yes': 'yes', 'Maybe if ties': '', 
-                 'if u mormon': '', 'NO NO NO': 'no', 'nah check out their OOS tuition': '', 'yes maybe?': '', 'yes if ties to state': '', 
-                 'maybe': '', 'YES ': 'yes'}
+mapping_dict2 = {'YES': 'Yes', 'YES but low yield': np.nan, 'YES but check out tuition': 'Yes', 'no': 'No', 'Yes': 'Yes', 'Maybe if ties': np.nan, 
+                 'if u mormon': np.nan, 'NO NO NO': 'No', 'nah check out their OOS tuition': np.nan, 'yes maybe?': np.nan, 'yes if ties to state': np.nan, 
+                 'maybe': np.nan, 'YES ': 'Yes', 'No unless nearby': 'No', 'yes': 'Yes'}
 merge_df = merge_df.replace({'apply OOS to public state school?': mapping_dict2})
 
 merge_df.to_csv('admit_docs_merged.csv', encoding='utf-8', index = False)
@@ -115,7 +119,7 @@ merge_df.to_csv('admit_docs_merged.csv', encoding='utf-8', index = False)
 ## if doc and reddit disagree, I put it as maybe --> will use ML to predict these later
 
 
-merge_df.loc[merge_df['Public/Private'] == 'Private', 'apply OOS to public state school?'] = 'yes'
+merge_df.loc[merge_df['Public/Private'] == 'Private', 'apply OOS to public state school?'] = 'Yes'
 
 ## remove uncertain schools
 uncertain_privates_list = ['Baylor', 'Geisinger Commonwealth', 'University of Cincinnati', 'UNC']
@@ -131,13 +135,13 @@ OOS_yes_list = ['Eastern Virginia', 'Oakland University', 'Ohio State University
 OOS_no_list = ['East Carolina University', 'Central Michigan', 'CUNY School of Medicine', 'UTSW', 'McGovern (Houston)', 'Texas A&M', 
                'East Tennessee State', 'Florida State University', 'Buffalo (Jacobs)', 'LSU (New Orleans)', 'LSU (Shreveport)', 'Marshall University', 
                'Augusta University (MCG)', 'Medical College of Wisconsin', 'Mercer University', 'Michigan State University', 'Northeast Ohio', 'Southern Illinois University', 
-               'SUNY Downstate', 'SUNY Upstate', 'University of Alabama', 'University of Arkansas', 'UC Davis', 'UC Irvine', 
+               'SUNY Downstate', 'SUNY Upstate', 'University of Alabama', 'University of Arkansas', 'UC Davis', 'UC Irvine', 'UC Riverside', 'Medical College of Wisconsin',
                'University of Florida', 'University of Hawaii', 'University of Kansas', 'University of Louisville', 'University of Mississippi', 'Missouri-Columbia',
-               'University of Nebraska', 'University of New Mexico', 'University of Oklahoma', 'University of South Alabama', 'University of Tennessee']
+               'University of Nebraska', 'University of New Mexico', 'University of Oklahoma', 'University of South Alabama', 'University of Tennessee', 'Texas Tech (El Paso)']
 
 
-merge_df.loc[merge_df['School'].isin(OOS_yes_list), 'apply OOS to public state school?'] = 'yes'
-merge_df.loc[merge_df['School'].isin(OOS_no_list), 'apply OOS to public state school?'] = 'no'
+merge_df.loc[merge_df['School'].isin(OOS_yes_list), 'apply OOS to public state school?'] = 'Yes'
+merge_df.loc[merge_df['School'].isin(OOS_no_list), 'apply OOS to public state school?'] = 'No'
 
 
 merge_df.to_csv('admit_docs_merged_ML.csv', encoding='utf-8', index = False)

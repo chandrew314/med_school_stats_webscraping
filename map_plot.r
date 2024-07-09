@@ -12,7 +12,7 @@ rf_prediction_df <- read.csv('OOS_friendly_RF_model_prediction.csv', header = TR
 west_list <- c('CA', 'OR', 'WA', 'NV', 'AZ', 'UT', 'NM', 'CO', 'WY', 'ID', 'MT', 'HI')
 # northeast_list <- c('ME', 'VT', 'NH', 'MA', 'RI', 'CT', 'NY', 'NJ', 'PA')
 midwest_list <- c('ND', 'SD', 'NE', 'KS', 'MO', 'IA', 'MN', 'WI', 'IL', 'MI', 'IN', 'OH')
-south_list <- c('OK', 'TX', 'AK', 'LA', 'MS', 'TN', 'KY', 'AL', 'GA', 'FL')
+south_list <- c('OK', 'TX', 'AR', 'LA', 'MS', 'TN', 'KY', 'AL', 'GA', 'FL')
 midatlantic_list <- c('NY', 'PA', 'NJ')
 newengland_list <- c('ME', 'NH', 'VT', 'MA', 'CT', 'RI')
 southatlantic_list <- c('MD', 'DE', 'DC', 'VA', 'WV', 'NC', 'SC')
@@ -92,9 +92,12 @@ rf_prediction_df[rf_prediction_df$School == 'University of Miami', c('latitude',
 rf_prediction_df[rf_prediction_df$School == 'Dartmouth (Geisel)', c('latitude', 'longitude')] <- c(43.70889113568098, -72.28510850320377)
 rf_prediction_df[rf_prediction_df$School == 'Wake Forest', c('latitude', 'longitude')] <- c(36.10021572895614, -80.24021724586683)
 rf_prediction_df[rf_prediction_df$School == 'UC Davis', c('latitude', 'longitude')] <- c(38.55313988723398, -121.4525691457653)
+rf_prediction_df[rf_prediction_df$School == 'USF (Morsani)', c('latitude', 'longitude')] <- c(27.94411749818683, -82.44935863081214)
 rf_prediction_df[rf_prediction_df$School == 'Georgetown University', c('latitude', 'longitude')] <- c(38.9119936988319, -77.07700894574994)
 rf_prediction_df[rf_prediction_df$School == 'Tufts University', c('latitude', 'longitude')] <- c(42.35024598486101, -71.06231685564244)
+rf_prediction_df[rf_prediction_df$School == 'Medical University of South Carolina', c('latitude', 'longitude')] <- c(32.789822975630216, -79.94614088217146)
 rf_prediction_df[rf_prediction_df$School == 'McGovern (Houston)', c('latitude', 'longitude')] <- c(29.71283502630886, -95.39726370377248)
+rf_prediction_df[rf_prediction_df$School == 'George Washington', c('latitude', 'longitude')] <- c(38.90037141429332, -77.05098666109495)
 rf_prediction_df[rf_prediction_df$School == 'Stony Brook University', c('latitude', 'longitude')] <- c(40.908770330245716, -73.1149835879896)
 rf_prediction_df[rf_prediction_df$School == 'Jefferson (Kimmel)', c('latitude', 'longitude')] <- c(39.948846345691564, -75.15786747454081)
 rf_prediction_df[rf_prediction_df$School == 'University of Illinois', c('latitude', 'longitude')] <- c(41.8715353679799, -87.6734899321263)
@@ -109,6 +112,7 @@ rf_prediction_df[rf_prediction_df$School == 'Rush University', c('latitude', 'lo
 rf_prediction_df[rf_prediction_df$School == 'Rutgers (Robert Johnson)', c('latitude', 'longitude')] <- c(40.5251762996634, -74.47012790149844)
 rf_prediction_df[rf_prediction_df$School == 'Rutgers New Jersey', c('latitude', 'longitude')] <- c(40.74022669328292, -74.18970964752238)
 rf_prediction_df[rf_prediction_df$School == 'Temple University', c('latitude', 'longitude')] <- c(40.0070389659444, -75.15213343221046)
+rf_prediction_df[rf_prediction_df$School == 'University of Tennessee', c('latitude', 'longitude')] <- c(36.05344055144944, -83.94057251210515)
 rf_prediction_df[rf_prediction_df$School == 'Wayne State University', c('latitude', 'longitude')] <- c(42.45583417542232, -83.02267448590331)
 rf_prediction_df[rf_prediction_df$School == 'University of Kansas', c('latitude', 'longitude')] <- c(38.91199645694449, -97.61284280164854)
 rf_prediction_df[rf_prediction_df$School == 'Buffalo (Jacobs)', c('latitude', 'longitude')] <- c(42.89985690216158, -78.86921133022548)
@@ -123,19 +127,41 @@ rf_prediction_df[rf_prediction_df$School == 'Saint Louis University', c('latitud
 rf_prediction_df[rf_prediction_df$School == 'Missouri-Columbia', c('latitude', 'longitude')] <- c(38.97771131186967, -92.33395805671516)
 rf_prediction_df[rf_prediction_df$School == 'West Virginia University', c('latitude', 'longitude')] <- c(39.654870274915055, -79.95770290338997)
 rf_prediction_df[rf_prediction_df$School == 'Drexel University', c('latitude', 'longitude')] <- c(40.019664016082636, -75.17992217639058)
+rf_prediction_df[rf_prediction_df$School == 'Michigan State University', c('latitude', 'longitude')] <- c(43.03314426417556, -85.65177749414849)
+rf_prediction_df[rf_prediction_df$School == 'SUNY Upstate', c('latitude', 'longitude')] <- c(43.04044103378732, -76.13914843207166)
 rf_prediction_df[rf_prediction_df$School == 'Missouri-Kansas', c('latitude', 'longitude')] <- c(39.08328483639969, -94.57518014574256)
 rf_prediction_df[rf_prediction_df$School == 'University of Nevada (Reno)', c('latitude', 'longitude')] <- c(39.54910540902771, -119.81400758804998)
 rf_prediction_df[rf_prediction_df$School == 'University of South Carolina', c('latitude', 'longitude')] <- c(33.97866411648905, -80.9629729189662)
+rf_prediction_df[rf_prediction_df$School == 'Texas Tech University', c('latitude', 'longitude')] <- c(33.59031074451625, -101.89117131712784)
+rf_prediction_df[rf_prediction_df$School == 'UC Riverside', c('latitude', 'longitude')] <- c(33.973919138486316, -117.32399426440479)
 rf_prediction_df[rf_prediction_df$School == 'Florida State University', c('latitude', 'longitude')] <- c(30.447048316080135, -84.30552476908035)
 rf_prediction_df[rf_prediction_df$School == 'University of Central Florida', c('latitude', 'longitude')] <- c(28.367480583410316, -81.28018127497957)
 rf_prediction_df[rf_prediction_df$School == 'Eastern Virginia', c('latitude', 'longitude')] <- c(36.860553581726016, -76.30357080350832)
 rf_prediction_df[rf_prediction_df$School == 'New York Medical College', c('latitude', 'longitude')] <- c(41.08555744753234, -73.81007270332607)
+rf_prediction_df[rf_prediction_df$School == 'University of Toledo', c('latitude', 'longitude')] <- c(41.61951462121917, -83.61698903213788)
+rf_prediction_df[rf_prediction_df$School == 'East Carolina University', c('latitude', 'longitude')] <- c(35.60993269132835, -77.4028292458864)
 rf_prediction_df[rf_prediction_df$School == 'East Tennessee State', c('latitude', 'longitude')] <- c(36.30926923758435, -82.378904430514)
+rf_prediction_df[rf_prediction_df$School == 'Howard University', c('latitude', 'longitude')] <- c(38.91909507761877, -77.02004897458575)
 rf_prediction_df[rf_prediction_df$School == 'Florida Atlantic University', c('latitude', 'longitude')] <- c(26.373517293107632, -80.10046536154822)
 rf_prediction_df[rf_prediction_df$School == 'Florida International University', c('latitude', 'longitude')] <- c(25.758365595555862, -80.37134501923803)
+rf_prediction_df[rf_prediction_df$School == 'Marshall University', c('latitude', 'longitude')] <- c(38.40936874080721, -82.42620345741021)
 rf_prediction_df[rf_prediction_df$School == 'Cooper (Rowan)', c('latitude', 'longitude')] <- c(39.94074993947175, -75.11971466104953)
+rf_prediction_df[rf_prediction_df$School == 'Wright State University', c('latitude', 'longitude')] <- c(39.78030210050844, -84.06140321131737)
+rf_prediction_df[rf_prediction_df$School == 'Medical College of Wisconsin', c('latitude', 'longitude')] <- c(43.0436312581639, -88.0217837955632)
+rf_prediction_df[rf_prediction_df$School == 'Loyola University (Stritch)', c('latitude', 'longitude')] <- c(41.858787086412164, -87.83612273212684)
+rf_prediction_df[rf_prediction_df$School == 'Arknasas COM', c('latitude', 'longitude')] <- c(35.34958064150193, -94.31335262912214)
+rf_prediction_df[rf_prediction_df$School == 'University of North Dakota', c('latitude', 'longitude')] <- c(47.93187339835228, -97.06804448764824)
 rf_prediction_df[rf_prediction_df$School == 'South Carolina (Greenville)', c('latitude', 'longitude')] <- c(34.82166567253067, -82.41140937475335)
+rf_prediction_df[rf_prediction_df$School == 'University of South Dakota', c('latitude', 'longitude')] <- c(42.95418747922167, -96.94129698848559)
+rf_prediction_df[rf_prediction_df$School == 'LSU (Shreveport)', c('latitude', 'longitude')] <- c(32.480753045668095, -93.76064319971051)
+rf_prediction_df[rf_prediction_df$School == 'Texas Tech (El Paso)', c('latitude', 'longitude')] <- c(31.771963107081906, -106.43098738343596)
 rf_prediction_df[rf_prediction_df$School == 'Quinnipiac University', c('latitude', 'longitude')] <- c(41.41476655327027, -72.83459041680277)
+rf_prediction_df[rf_prediction_df$School == 'VCOM', c('latitude', 'longitude')] <- c(37.199705179229426, -80.4059144518552)
+rf_prediction_df[rf_prediction_df$School == 'LECOM', c('latitude', 'longitude')] <- c(42.08036612052119, -80.10550968978885)
+rf_prediction_df[rf_prediction_df$School == 'Texas Christian University', c('latitude', 'longitude')] <- c(32.73341884978053, -97.33733126134008)
+
+
+
 ## for now:
 rf_prediction_df <- rf_prediction_df[complete.cases(rf_prediction_df[, 3:ncol(rf_prediction_df)]), ]
 
@@ -153,11 +179,11 @@ west <- plot_usmap(regions = 'states',
     geom_sf(data = transformed_df[which(transformed_df$region == 'west'), ], aes(color = .pred_class)) +
     ggrepel::geom_label_repel(data = transformed_df[which(transformed_df$region == 'west'), ],
         aes(label = School, geometry = geometry, color = .pred_class),
-        size = 4, alpha = 0.8,
+        size = 3, alpha = 0.8,
         label.r = unit(0.5, "lines"), label.size = 0.3,
         segment.color = "black", segment.size = 0.5,
         stat = "sf_coordinates", seed = 1002,
-        max.overlaps = 20,
+        max.overlaps = 30,
         force = 30) +
         scale_color_manual(values=c("#F8766D", "#00BA38"), name = 'OOS friendly?')
 
@@ -167,11 +193,11 @@ midatlantic <- plot_usmap(regions = 'states',
     geom_sf(data = transformed_df[which(transformed_df$region == 'midatlantic'), ], aes(color = .pred_class)) +
     ggrepel::geom_label_repel(data = transformed_df[which(transformed_df$region == 'midatlantic'), ],
         aes(label = School, geometry = geometry, color = .pred_class),
-        size = 4, alpha = 0.8,
+        size = 3, alpha = 0.8,
         label.r = unit(0.5, "lines"), label.size = 0.3,
         segment.color = "black", segment.size = 0.5,
         stat = "sf_coordinates", seed = 1002,
-        max.overlaps = 20,
+        max.overlaps = 30,
         force = 30) +
         scale_color_manual(values=c("#F8766D", "#00BA38"))
 
@@ -181,11 +207,11 @@ newengland <- plot_usmap(regions = 'states',
     geom_sf(data = transformed_df[which(transformed_df$region == 'new england'), ], aes(color = .pred_class)) +
     ggrepel::geom_label_repel(data = transformed_df[which(transformed_df$region == 'new england'), ],
         aes(label = School, geometry = geometry, color = .pred_class),
-        size = 4, alpha = 0.8,
+        size = 3, alpha = 0.8,
         label.r = unit(0.5, "lines"), label.size = 0.3,
         segment.color = "black", segment.size = 0.5,
         stat = "sf_coordinates", seed = 1002,
-        max.overlaps = 20,
+        max.overlaps = 30,
         force = 30) + 
         scale_color_manual(values=c("#00BA38"))
 
@@ -195,11 +221,11 @@ midwest <- plot_usmap(regions = 'states',
     geom_sf(data = transformed_df[which(transformed_df$region == 'midwest'), ], aes(color = .pred_class)) +
     ggrepel::geom_label_repel(data = transformed_df[which(transformed_df$region == 'midwest'), ],
         aes(label = School, geometry = geometry, color = .pred_class),
-        size = 4, alpha = 0.8,
+        size = 3, alpha = 0.8,
         label.r = unit(0.5, "lines"), label.size = 0.3,
         segment.color = "black", segment.size = 0.5,
         stat = "sf_coordinates", seed = 1002,
-        max.overlaps = 20,
+        max.overlaps = 30,
         force = 30) + 
     scale_color_manual(values=c("#F8766D", "#00BA38"))
 
@@ -209,11 +235,11 @@ south <- plot_usmap(regions = 'states',
     geom_sf(data = transformed_df[which(transformed_df$region == 'south'), ], aes(color = .pred_class)) +
     ggrepel::geom_label_repel(data = transformed_df[which(transformed_df$region == 'south'), ],
         aes(label = School, geometry = geometry, color = .pred_class),
-        size = 4, alpha = 0.8,
+        size = 3, alpha = 0.8,
         label.r = unit(0.5, "lines"), label.size = 0.3,
         segment.color = "black", segment.size = 0.5,
         stat = "sf_coordinates", seed = 1002,
-        max.overlaps = 20,
+        max.overlaps = 30,
         force = 30) + 
     scale_color_manual(values=c("#F8766D", "#00BA38"))
 
@@ -223,11 +249,11 @@ southatlantic <- plot_usmap(regions = 'states',
     geom_sf(data = transformed_df[which(transformed_df$region == 'south atlantic'), ], aes(color = .pred_class)) +
     ggrepel::geom_label_repel(data = transformed_df[which(transformed_df$region == 'south atlantic'), ],
         aes(label = School, geometry = geometry, color = .pred_class),
-        size = 4, alpha = 0.8,
+        size = 3, alpha = 0.8,
         label.r = unit(0.5, "lines"), label.size = 0.3,
         segment.color = "black", segment.size = 0.5,
         stat = "sf_coordinates", seed = 1002,
-        max.overlaps = 20,
+        max.overlaps = 30,
         force = 30) + 
     scale_color_manual(values=c("#F8766D", "#00BA38"))
 
@@ -253,20 +279,20 @@ legend <- get_legend_35(west + theme(legend.position = "right"))
 left_col <- plot_grid(empty_plot,
                         west + theme(legend.position="none"), 
                         legend, 
-                        ncol = 1, rel_heights = c(3, 10, 1), scale = c(1, 1.2, 1))
+                        ncol = 1, rel_heights = c(3, 10, 1), scale = c(1, 1.9, 1))
 middle_col <- plot_grid(empty_plot,
                         midwest + theme(legend.position="none"), 
                         empty_plot,
                         south + theme(legend.position="none"),
                         empty_plot,
-                        ncol = 1, rel_heights = c(0.3, 1, 0.3, 1.5, 0.05), scale = c(1, 1.8, 1, 1.6, 0.5))
+                        ncol = 1, rel_heights = c(1, 1.4, 0.9, 1.9, 0.1), scale = c(1, 2.3, 1, 2.3, 0.7))
 right_col <- plot_grid(newengland + theme(legend.position="none"), 
                         midatlantic + theme(legend.position="none"), 
                         southatlantic + theme(legend.position="none"), 
                         ncol = 1, rel_heights = c(1.6, 1.5, 1.7), scale = c(1.2, 1.1, 1))
 
-map_plot <- plot_grid(empty_plot, left_col, empty_plot, middle_col, right_col, nrow = 1, rel_widths = c(0.2, 2.7, 0.4, 2.7, 4.3))
-ggsave('map2.jpeg', map_plot, width = 15, height = 15, dpi = 300)
+map_plot <- plot_grid(empty_plot, left_col, empty_plot, middle_col, empty_plot, right_col, nrow = 1, rel_widths = c(0.9, 2.3, 1.8, 2.7, 0.7, 4.9))
+ggsave('map_help.jpeg', map_plot, width = 15, height = 15, dpi = 300)
 
 
 
