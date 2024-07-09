@@ -15,6 +15,7 @@ _Note. I calculate in-state bias as the $`\frac{\text{in-state acceptance rate}}
 _Note. I use the $`\frac{\text{in-state acceptance rate}}{\text{Average in-state acceptance rate among public schools}}`$ as a measure of how much a medical school favors in-state applicants in comparison to that of_ other _public medical schools. All of that to say_&mdash;_it's a \(not very well-thought-out/crude\) metric of how much a public medical school favors in-state applicants in comparison to how much other public medical schools favor in-state applicants._
 
 ### Random forest binary classification: Which states are objectively OOS friendly?
+While there's some concensus about which schools are out-of-state friendly&mdash;notably, private schools and a handful of public schools, like Larner COM (@University of Vermont), UMich, and OSU&mdash;there's also a lot of mixed information about many other schools. Here, we use the data about IS and OOS applications, IIs, acceptances, enrollment, and location to generate a RF machine learning model to predict which schools are OOS friendly.
 #### Evaluation metrics
 <p align="center">
 <img src = "https://github.com/chandrew314/med_school_stats_webscraping/blob/main/ROC_curve.jpeg" width = "400" />
