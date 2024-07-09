@@ -22,5 +22,5 @@ _Note. I use the $`\frac{\text{in-state acceptance rate}}{\text{Average in-state
 </p>
 
 #### Predictions
-![Figure4](maphelp.jpeg)
+![Figure4](map_help.jpeg)
 _Note. Yes, I am missing a lot of med schools, which sucks because then the ML algorithm could probably better classify schools' OOS friendliness with a larger sample size. But also, making this map was hell_&mdash;_I can't imagine trying to add even more schools to it without throwing myself at the wall. Take these results with a grain of salt as no algorithm is perfect, and it's up to you which schools you're willing to go to :)_
