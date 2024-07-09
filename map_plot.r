@@ -8,11 +8,16 @@ library(sf)
 
 rf_prediction_df <- read.csv('OOS_friendly_RF_model_prediction.csv', header = TRUE)
 
-## missing AK bc someone labeled Arkansas (AR) as AK in the dataset
+## Fix typo for University of South Dakota
+rf_prediction_df[rf_prediction_df$School == 'Unviersity of South Dakota', 'School'] <- 'University of South Dakota'
+rf_prediction_df[rf_prediction_df$State == 'AK', 'State'] <- 'AR'
+
+## missing AK bc no schools are in Alaska
 west_list <- c('CA', 'OR', 'WA', 'NV', 'AZ', 'UT', 'NM', 'CO', 'WY', 'ID', 'MT', 'HI')
 # northeast_list <- c('ME', 'VT', 'NH', 'MA', 'RI', 'CT', 'NY', 'NJ', 'PA')
 midwest_list <- c('ND', 'SD', 'NE', 'KS', 'MO', 'IA', 'MN', 'WI', 'IL', 'MI', 'IN', 'OH')
-south_list <- c('OK', 'TX', 'AR', 'LA', 'MS', 'TN', 'KY', 'AL', 'GA', 'FL')
+# Someone put Louisiana as 'LO' instead of LA
+south_list <- c('OK', 'TX', 'AR', 'LO', 'MS', 'TN', 'KY', 'AL', 'GA', 'FL')
 midatlantic_list <- c('NY', 'PA', 'NJ')
 newengland_list <- c('ME', 'NH', 'VT', 'MA', 'CT', 'RI')
 southatlantic_list <- c('MD', 'DE', 'DC', 'VA', 'WV', 'NC', 'SC')
@@ -149,10 +154,10 @@ rf_prediction_df[rf_prediction_df$School == 'Cooper (Rowan)', c('latitude', 'lon
 rf_prediction_df[rf_prediction_df$School == 'Wright State University', c('latitude', 'longitude')] <- c(39.78030210050844, -84.06140321131737)
 rf_prediction_df[rf_prediction_df$School == 'Medical College of Wisconsin', c('latitude', 'longitude')] <- c(43.0436312581639, -88.0217837955632)
 rf_prediction_df[rf_prediction_df$School == 'Loyola University (Stritch)', c('latitude', 'longitude')] <- c(41.858787086412164, -87.83612273212684)
-rf_prediction_df[rf_prediction_df$School == 'Arknasas COM', c('latitude', 'longitude')] <- c(35.34958064150193, -94.31335262912214)
+rf_prediction_df[rf_prediction_df$School == 'Arkansas COM', c('latitude', 'longitude')] <- c(35.34958064150193, -94.31335262912214)
 rf_prediction_df[rf_prediction_df$School == 'University of North Dakota', c('latitude', 'longitude')] <- c(47.93187339835228, -97.06804448764824)
 rf_prediction_df[rf_prediction_df$School == 'South Carolina (Greenville)', c('latitude', 'longitude')] <- c(34.82166567253067, -82.41140937475335)
-rf_prediction_df[rf_prediction_df$School == 'University of South Dakota', c('latitude', 'longitude')] <- c(42.95418747922167, -96.94129698848559)
+rf_prediction_df[rf_prediction_df$School == 'University of South Dakota', c('latitude', 'longitude')] <- c(42.78246076071959, -96.92850700324774)
 rf_prediction_df[rf_prediction_df$School == 'LSU (Shreveport)', c('latitude', 'longitude')] <- c(32.480753045668095, -93.76064319971051)
 rf_prediction_df[rf_prediction_df$School == 'Texas Tech (El Paso)', c('latitude', 'longitude')] <- c(31.771963107081906, -106.43098738343596)
 rf_prediction_df[rf_prediction_df$School == 'Quinnipiac University', c('latitude', 'longitude')] <- c(41.41476655327027, -72.83459041680277)
