@@ -25,3 +25,15 @@ While there's some concensus about which schools are out-of-state friendly&mdash
 #### Predictions
 ![Figure4](map_help.jpeg)
 _Note. Yes, I am missing a lot of med schools, which sucks because the ML algorithm could better classify schools' OOS friendliness with a larger sample size. But also, making this map was hell_&mdash;_I can't imagine trying to add even more schools to it without throwing myself at the wall because it took so long to make everything readable and fit on one plot. Take these results with a grain of salt as no algorithm is perfect, and it's up to you which schools you're willing to go to :)_
+
+## Updates!
+I recently got access to MSAR data, so naturally, I ran the RF model on this updated data with IS vs OOS application, II, and matriculant data.
+#### Evaluation metrics
+<p align="center">
+<img src = "https://github.com/chandrew314/med_school_stats_webscraping/blob/main/ROC_curve_MSAR_rf.jpeg" width = "400" />
+<img src = "https://github.com/chandrew314/med_school_stats_webscraping/blob/main/VIP_MSAR.jpeg" width = "400" />
+</p>
+
+#### Predictions
+![Figure4](map_MSAR.jpeg)
+_Note. When training this model, I didn't force all private schools to be OOS friendly since I had data on more schools. This is reflected in the differing predictions between the two models. 
