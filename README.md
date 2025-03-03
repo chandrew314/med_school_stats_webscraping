@@ -36,4 +36,4 @@ I recently got access to MSAR data, so naturally, I ran the RF model on this upd
 
 #### Predictions
 ![Figure4](map_MSAR.jpeg)
-_Note. When training this model, I didn't force all private schools to be OOS friendly since I had data on more schools. This is reflected in the differing predictions between the two models. 
+_Note. When training this model, I didn't force all private schools to be OOS friendly since I had data on more schools. This is reflected in the differing predictions between the two models._
